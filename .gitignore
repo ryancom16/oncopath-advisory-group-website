@@ -1,0 +1,5 @@
+internal/
+handoff/
+*.zip
+.DS_Store
+Thumbs.db

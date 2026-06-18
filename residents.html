@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Resident Physicians | OncoPath Advisory Group</title>
+    <meta
+      name="description"
+      content="OncoPath Resident Pathways supports resident physicians considering cancer-care specialties or seeking stronger oncology literacy."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="./index.html" aria-label="OncoPath Advisory Group home">
+        <span class="brand-mark" aria-hidden="true">OP</span>
+        <span>OncoPath Advisory Group</span>
+      </a>
+
+      <button class="nav-toggle" type="button" data-nav-toggle aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" data-nav>
+        <a href="./fellows.html">Fellows</a>
+        <a href="./residents.html">Residents</a>
+        <a href="./consulting.html">Consulting</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero resident-hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow">Resident physician pathways</p>
+          <h1 id="hero-title">Explore the path into oncology.</h1>
+          <p class="hero-copy">
+            Educational and mentorship programming for resident physicians considering hematology-oncology, radiation
+            oncology, surgical oncology, or other cancer-care paths.
+          </p>
+          <div class="hero-actions" aria-label="Primary">
+            <a class="button button-primary" href="#interest">Join Interest List</a>
+            <a class="button button-secondary" href="#programs">View Program Areas</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="signal-strip" aria-label="Resident positioning">
+        <div>
+          <strong>Career clarity</strong>
+          <span>Understand the training path and real practice options.</span>
+        </div>
+        <div>
+          <strong>Oncology literacy</strong>
+          <span>Build confidence around cancer care across specialties.</span>
+        </div>
+        <div>
+          <strong>Mentor access</strong>
+          <span>Learn from physicians who know the fellowship and career landscape.</span>
+        </div>
+      </section>
+
+      <section class="section section-light" id="programs" aria-labelledby="programs-title">
+        <div class="section-inner two-column">
+          <div>
+            <p class="eyebrow">Residents</p>
+            <h2 id="programs-title">For residents considering what oncology could become.</h2>
+          </div>
+          <div class="prose">
+            <p>
+              Residents often encounter oncology through inpatient consults, clinic rotations, research experiences, or
+              personal curiosity before they know which cancer-care path, if any, is the right long-term fit.
+            </p>
+            <p>
+              OncoPath Resident Pathways is designed to make that exploration clearer, more practical, and more
+              connected to real mentorship.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-white" aria-labelledby="resident-offerings-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Program Areas</p>
+            <h2 id="resident-offerings-title">Support before fellowship decisions are final.</h2>
+          </div>
+          <div class="principle-grid">
+            <article class="principle-card">
+              <span class="card-index">01</span>
+              <h3>Specialty exploration</h3>
+              <p>Explore hematology-oncology, radiation oncology, surgical oncology, and adjacent cancer-care paths.</p>
+            </article>
+            <article class="principle-card">
+              <span class="card-index">02</span>
+              <h3>Fellowship preparation</h3>
+              <p>Learn how research, mentorship, applications, and interviews fit together across cancer specialties.</p>
+            </article>
+            <article class="principle-card">
+              <span class="card-index">03</span>
+              <h3>Research orientation</h3>
+              <p>Find practical routes into abstracts, manuscripts, mentorship, and scholarly work.</p>
+            </article>
+            <article class="principle-card">
+              <span class="card-index">04</span>
+              <h3>Cross-specialty oncology</h3>
+              <p>For residents in other specialties who need stronger cancer-care fluency.</p>
+            </article>
+            <article class="principle-card">
+              <span class="card-index">05</span>
+              <h3>Mentorship events</h3>
+              <p>Small group conversations with fellows, attendings, and near-peer physicians.</p>
+            </article>
+            <article class="principle-card">
+              <span class="card-index">06</span>
+              <h3>Career perspective</h3>
+              <p>Academia, hospital practice, private practice, industry, and hybrid career paths.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-white contact-section" id="interest" aria-labelledby="interest-title">
+        <div class="section-inner contact-layout">
+          <div>
+            <p class="eyebrow">Resident Interest</p>
+            <h2 id="interest-title">Tell us what would help you explore oncology.</h2>
+            <p>
+              Join the resident interest list for future programming, mentorship events, and educational sessions.
+            </p>
+          </div>
+          <form class="contact-form" data-contact-form data-form-kind="resident">
+            <label>
+              Full name
+              <input type="text" name="name" autocomplete="name" placeholder="Your name" />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" autocomplete="email" placeholder="name@example.com" />
+            </label>
+            <label>
+              Residency program / institution
+              <input type="text" name="program" placeholder="Program or institution" />
+            </label>
+            <label>
+              Training year
+              <select name="trainingYear">
+                <option>PGY-1</option>
+                <option>PGY-2</option>
+                <option>PGY-3</option>
+                <option>PGY-4+</option>
+                <option>Other / not listed</option>
+              </select>
+            </label>
+            <label>
+              Current specialty or interest
+              <input type="text" name="specialty" placeholder="Internal medicine, surgery, radiation oncology..." />
+            </label>
+            <label>
+              Topics you would value
+              <textarea
+                name="topics"
+                rows="4"
+                placeholder="Fellowship applications, research, clinical exposure, mentorship, career paths..."
+              ></textarea>
+            </label>
+            <button class="button button-primary" type="submit">Join Interest List</button>
+            <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>OncoPath Advisory Group</strong>
+        <span>Path to Cure: cancer-care education, community, and advisory services.</span>
+      </div>
+      <p>
+        Programming is educational and career-oriented. No CME credit is offered unless expressly stated through an
+        accredited provider.
+      </p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
