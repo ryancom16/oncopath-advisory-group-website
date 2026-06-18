@@ -1,0 +1,24 @@
+<!-- @dsCard group="Spacing" viewport="700x200" name="Spacing scale" subtitle="4px base — section rhythm uses fluid clamps" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  body { margin: 0; font-family: var(--font-body); background: var(--paper); padding: 24px 28px; }
+  .row { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+  .bar { background: var(--brass-600); height: 16px; border-radius: 3px; }
+  .lab { font-size: 0.74rem; color: var(--navy-600); font-weight: 700; width: 64px; }
+  .val { font-size: 0.7rem; color: var(--text-muted); font-variant-numeric: tabular-nums; }
+</style>
+</head>
+<body>
+  <div class="row"><span class="lab">space-1</span><div class="bar" style="width:4px"></div><span class="val">4px</span></div>
+  <div class="row"><span class="lab">space-2</span><div class="bar" style="width:8px"></div><span class="val">8px</span></div>
+  <div class="row"><span class="lab">space-4</span><div class="bar" style="width:16px"></div><span class="val">16px</span></div>
+  <div class="row"><span class="lab">space-6</span><div class="bar" style="width:24px"></div><span class="val">24px</span></div>
+  <div class="row"><span class="lab">space-10</span><div class="bar" style="width:40px"></div><span class="val">40px</span></div>
+  <div class="row"><span class="lab">space-16</span><div class="bar" style="width:64px"></div><span class="val">64px</span></div>
+  <div class="row"><span class="lab">space-24</span><div class="bar" style="width:96px"></div><span class="val">96px</span></div>
+</body>
+</html>

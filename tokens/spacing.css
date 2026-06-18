@@ -1,0 +1,44 @@
+/* OncoPath Advisory Group — Spacing, radius, shadow, layout tokens */
+:root {
+  /* Spacing scale (4px base) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  /* Section rhythm — fluid */
+  --section-pad-y: clamp(68px, 9vw, 128px);
+  --section-pad-x: clamp(22px, 6vw, 86px);
+  --container-max: 1180px;
+
+  /* Radius — restrained. Brand uses a tight 8px on most surfaces, never pill cards */
+  --radius-sm: 6px;
+  --radius: 8px;
+  --radius-lg: 12px;
+  --radius-pill: 999px;
+
+  /* Borders */
+  --border-hairline: 1px solid var(--line);
+
+  /* Shadows — soft, low, warm-tinted. Never harsh or neon. */
+  --shadow-card: 0 14px 40px rgba(19, 43, 53, 0.06);
+  --shadow-raised: 0 24px 70px rgba(6, 23, 35, 0.18);
+  --shadow-header: 0 8px 32px rgba(6, 23, 35, 0.22);
+
+  /* Motion */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1); /* @kind other */
+  --dur-fast: 160ms; /* @kind other */
+  --dur: 180ms; /* @kind other */
+
+  /* Controls */
+  --control-min-h: 48px;
+  --field-min-h: 46px;
+}

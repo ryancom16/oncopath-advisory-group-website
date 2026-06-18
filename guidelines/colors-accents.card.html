@@ -1,0 +1,59 @@
+<!-- @dsCard group="Colors" viewport="700x300" name="Lane accents" subtitle="Each accent owns one lane — brass, sage, blue, burgundy" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  body { margin: 0; font-family: var(--font-body); background: var(--paper); padding: 22px; }
+  .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .col h4 { margin: 0 0 10px; font-size: 0.74rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; }
+  .stack { display: grid; gap: 6px; }
+  .chip { height: 40px; border-radius: var(--radius); display: flex; align-items: center; padding: 0 10px; font-size: 0.7rem; font-weight: 600; color: #fff; }
+  .chip.tint { color: var(--navy-600); }
+  .lane { font-size: 0.7rem; color: var(--text-muted); margin-top: 8px; }
+</style>
+</head>
+<body>
+  <div class="grid">
+    <div class="col">
+      <h4 style="color:var(--brass-600)">Brass</h4>
+      <div class="stack">
+        <div class="chip" style="background:var(--brass-700)">700 · #9a7536</div>
+        <div class="chip" style="background:var(--brass-600)">600 · #b88d4a</div>
+        <div class="chip" style="background:var(--brass-500)">500 · #cba15d</div>
+        <div class="chip tint" style="background:var(--brass-200)">200 · #ead7b5</div>
+      </div>
+      <div class="lane">Fellows · CTA</div>
+    </div>
+    <div class="col">
+      <h4 style="color:var(--sage-600)">Sage</h4>
+      <div class="stack">
+        <div class="chip" style="background:var(--sage-700)">700 · #51614f</div>
+        <div class="chip" style="background:var(--sage-600)">600 · #637968</div>
+        <div class="chip tint" style="background:var(--sage-100)">100 · #e2e9e2</div>
+      </div>
+      <div class="lane">Residents</div>
+    </div>
+    <div class="col">
+      <h4 style="color:var(--blue-600)">Clinical blue</h4>
+      <div class="stack">
+        <div class="chip" style="background:var(--blue-700)">700 · #235d72</div>
+        <div class="chip" style="background:var(--blue-600)">600 · #2b6f88</div>
+        <div class="chip" style="background:var(--blue-500)">500 · #3a8199</div>
+        <div class="chip tint" style="background:var(--blue-100)">100 · #d8e6ea</div>
+      </div>
+      <div class="lane">Consulting · links</div>
+    </div>
+    <div class="col">
+      <h4 style="color:var(--wine-600)">Burgundy</h4>
+      <div class="stack">
+        <div class="chip" style="background:var(--wine-700)">700 · #6c3540</div>
+        <div class="chip" style="background:var(--wine-600)">600 · #813e4a</div>
+        <div class="chip tint" style="background:var(--wine-100)">100 · #efdfe0</div>
+      </div>
+      <div class="lane">Partner · indices</div>
+    </div>
+  </div>
+</body>
+</html>

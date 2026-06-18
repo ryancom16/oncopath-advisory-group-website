@@ -1,0 +1,26 @@
+<!-- @dsCard group="Brand" viewport="700x210" name="Lane identity" subtitle="Four lanes, one brand — each owns an accent, eyebrow, and temperature" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  body { margin: 0; font-family: var(--font-body); background: var(--paper); padding: 22px; }
+  .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  .lane { border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-card); }
+  .bar { height: 6px; }
+  .body { padding: 14px; }
+  .eb { font: var(--eyebrow); text-transform: uppercase; margin: 0 0 8px; }
+  .nm { font: var(--display-3); font-size: 1.15rem; color: var(--navy-600); margin: 0 0 6px; }
+  .temp { font-size: 0.74rem; color: var(--text-muted); margin: 0; }
+</style>
+</head>
+<body>
+  <div class="grid">
+    <div class="lane"><div class="bar" style="background:var(--brass-600)"></div><div class="body"><p class="eb" style="color:var(--brass-600)">Fellows</p><p class="nm">Exchange</p><p class="temp">Warm · social · energizing</p></div></div>
+    <div class="lane"><div class="bar" style="background:var(--sage-600)"></div><div class="body"><p class="eb" style="color:var(--sage-600)">Residents</p><p class="nm">Pathways</p><p class="temp">Exploratory · developmental</p></div></div>
+    <div class="lane"><div class="bar" style="background:var(--blue-600)"></div><div class="body"><p class="eb" style="color:var(--blue-600)">Consulting</p><p class="nm">Services</p><p class="temp">Restrained · executive</p></div></div>
+    <div class="lane"><div class="bar" style="background:var(--wine-600)"></div><div class="body"><p class="eb" style="color:var(--wine-600)">Partner</p><p class="nm">Inquiry</p><p class="temp">Operational · compliant</p></div></div>
+  </div>
+</body>
+</html>

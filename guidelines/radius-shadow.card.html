@@ -1,0 +1,36 @@
+<!-- @dsCard group="Spacing" viewport="700x190" name="Radius & shadow" subtitle="Tight 8px radius; soft low warm-tinted shadows" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  body { margin: 0; font-family: var(--font-body); background: var(--cream); padding: 26px 28px; }
+  .row { display: flex; gap: 22px; flex-wrap: wrap; }
+  .box { width: 130px; height: 84px; background: #fff; border: 1px solid var(--line); display: flex; align-items: flex-end; padding: 10px; }
+  .lab { font-size: 0.72rem; font-weight: 700; color: var(--navy-600); }
+  .tok { font-size: 0.66rem; color: var(--text-muted); }
+  .cap { margin-top: 8px; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div>
+      <div class="box" style="border-radius:var(--radius-sm)"><span class="lab">6px</span></div>
+      <div class="cap"><div class="tok">--radius-sm</div></div>
+    </div>
+    <div>
+      <div class="box" style="border-radius:var(--radius)"><span class="lab">8px · default</span></div>
+      <div class="cap"><div class="tok">--radius</div></div>
+    </div>
+    <div>
+      <div class="box" style="border-radius:var(--radius);box-shadow:var(--shadow-card);border:none"><span class="lab">card</span></div>
+      <div class="cap"><div class="tok">--shadow-card</div></div>
+    </div>
+    <div>
+      <div class="box" style="border-radius:var(--radius);box-shadow:var(--shadow-raised);border:none"><span class="lab">raised</span></div>
+      <div class="cap"><div class="tok">--shadow-raised</div></div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+/* OncoPath Advisory Group — Webfonts
+ * Display serif: Newsreader (editorial, warm, literary) — upgrade from Georgia.
+ * Body / UI sans: Libre Franklin (clean American editorial) — upgrade from Inter.
+ * Both served from Google Fonts. Originals in the first build were the system
+ * stacks Georgia + Inter; these are intentional premium substitutions — see README.
+ */
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Libre+Franklin:wght@400;500;600;700;800&display=swap");

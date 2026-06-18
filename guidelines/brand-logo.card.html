@@ -1,0 +1,28 @@
+<!-- @dsCard group="Brand" viewport="700x240" name="Logo lockup" subtitle="Path-to-cure monogram + wordmark, on light and dark" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  body { margin: 0; font-family: var(--font-body); display: grid; grid-template-rows: 1fr 1fr; }
+  .panel { display: flex; align-items: center; padding: 0 32px; gap: 18px; }
+  .light { background: var(--paper); }
+  .dark { background: var(--navy-900); }
+  img { height: 52px; }
+  .note { font-size: 0.7rem; }
+  .light .note { color: var(--text-muted); }
+  .dark .note { color: var(--text-on-dark-muted); }
+</style>
+</head>
+<body>
+  <div class="panel light">
+    <img src="../assets/brand/oncopath-logo.svg" alt="OncoPath Advisory Group" />
+    <span class="note">Primary — on ivory / cream</span>
+  </div>
+  <div class="panel dark">
+    <img src="../assets/brand/oncopath-logo-ondark.svg" alt="OncoPath Advisory Group" />
+    <span class="note">Reversed — on navy</span>
+  </div>
+</body>
+</html>

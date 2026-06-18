@@ -1,0 +1,48 @@
+// Homepage — umbrella brand architecture, three lanes.
+function HomeScreen({ go }) {
+  const { Hero, Button, SignalStrip, LaneCard } = window.OncoPathDesignSystem_1b0a1a;
+  return (
+    <div>
+      <Hero
+        lane="fellows"
+        image={HERO_IMG}
+        focus="center"
+        title="OncoPath Advisory Group"
+        copy="Physician-led oncology and hematology education, community, and advisory services for the path from training to practice and from diagnosis to cure."
+        actions={<>
+          <Button as="button" onClick={() => go("fellows")}>Fellows Exchange</Button>
+          <Button variant="secondary" as="button" onClick={() => go("consulting")}>Consulting Services</Button>
+        </>}
+      />
+
+      <SignalStrip items={[
+        { label: "Path to Cure", detail: "OncoPath is about the path toward better cancer care." },
+        { label: "Path to Independent Practice", detail: "Support for fellows, residents, and early-career physicians." },
+        { label: "Board-Certified Expertise", detail: "Consulting led by licensed oncology and hematology specialists." },
+      ]} />
+
+      <Section bg="white">
+        <SectionHeading eyebrow="Practice Areas" lane="fellows" title="Three lanes under one physician-led advisory group." />
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 18 }}>
+          <LaneCard lane="fellows" index="01" title="Oncology Subspecialty Fellows" link={{ label: "Explore Fellows Exchange →", href: "#" }} onClick={() => go("fellows")} style={{ cursor: "pointer" }}>
+            Dinner series, peer community, mentorship, research and publishing guidance, and career navigation for fellows across the oncologic subspecialties — medical, surgical, radiation, and hematologic oncology.
+          </LaneCard>
+          <LaneCard lane="residents" index="02" title="Resident Physicians" link={{ label: "Explore Resident Pathways →", href: "#" }} onClick={() => go("residents")} style={{ cursor: "pointer" }}>
+            Programming for residents considering hematology-oncology and exploring the path into the cancer-care subspecialties.
+          </LaneCard>
+          <LaneCard lane="consulting" index="03" title="Consulting Services" link={{ label: "View Consulting Services →", href: "#" }} onClick={() => go("consulting")} style={{ cursor: "pointer" }}>
+            Medical oncology and hematology consulting provided by board-certified, licensed medical oncologists and hematologists.
+          </LaneCard>
+        </div>
+      </Section>
+    </div>
+  );
+}
+
+// Eyebrow-only heading helper (when the h2 is set separately).
+function SectionHeadingInline({ eyebrow, lane }) {
+  const { Eyebrow } = window.OncoPathDesignSystem_1b0a1a;
+  return <Eyebrow lane={lane}>{eyebrow}</Eyebrow>;
+}
+
+Object.assign(window, { HomeScreen, SectionHeadingInline });

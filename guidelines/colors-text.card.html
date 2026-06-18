@@ -1,0 +1,39 @@
+<!-- @dsCard group="Colors" viewport="700x170" name="Text & surface roles" subtitle="Semantic text colors on light and dark" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  body { margin: 0; font-family: var(--font-body); display: grid; grid-template-columns: 1fr 1fr; }
+  .panel { padding: 22px 24px; }
+  .light { background: var(--paper); }
+  .dark { background: var(--navy-900); }
+  .line { display: flex; align-items: baseline; gap: 10px; margin-bottom: 10px; }
+  .strong { font-weight: 700; font-size: 1.02rem; }
+  .body { font-size: 0.95rem; }
+  .muted { font-size: 0.85rem; }
+  .tok { font-size: 0.68rem; font-family: var(--font-body); opacity: 0.55; margin-left: auto; }
+  .light .strong { color: var(--text-strong); }
+  .light .body { color: var(--text-body); }
+  .light .muted { color: var(--text-muted); }
+  .light .tok { color: var(--navy-600); }
+  .dark .strong { color: var(--text-on-dark); }
+  .dark .body { color: var(--text-on-dark-soft); }
+  .dark .muted { color: var(--text-on-dark-muted); }
+  .dark .tok { color: #fff; }
+</style>
+</head>
+<body>
+  <div class="panel light">
+    <div class="line"><span class="strong">Text strong</span><span class="tok">--text-strong</span></div>
+    <div class="line"><span class="body">Text body — the path from training to practice.</span><span class="tok">--text-body</span></div>
+    <div class="line"><span class="muted">Text muted — quiet disclaimers.</span><span class="tok">--text-muted</span></div>
+  </div>
+  <div class="panel dark">
+    <div class="line"><span class="strong">On dark</span><span class="tok">--text-on-dark</span></div>
+    <div class="line"><span class="body">On dark soft — hero subcopy.</span><span class="tok">--…-soft</span></div>
+    <div class="line"><span class="muted">On dark muted.</span><span class="tok">--…-muted</span></div>
+  </div>
+</body>
+</html>

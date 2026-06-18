@@ -1,0 +1,76 @@
+/* OncoPath Advisory Group — Color tokens
+ * Palette: deep navy, ivory, warm brass, clinical blue, sage, restrained burgundy.
+ * Premium, compliance-conscious, medical-hospitality. No SaaS gradients or purple.
+ */
+:root {
+  /* ---- Base ramps ---------------------------------------------------- */
+  /* Navy / ink */
+  --navy-900: #061723; /* deepest — hero overlays, deep sections */
+  --navy-800: #0d2231; /* footer, deep panels */
+  --navy-700: #102c3b; /* deep-soft */
+  --navy-600: #132b35; /* primary ink / body text */
+  --navy-500: #20414e;
+
+  /* Ivory / paper / cream — warm neutrals */
+  --paper:    #fffdf8; /* page background, lightest */
+  --cream:    #f7f1e7; /* warm section background */
+  --cream-deep: #efe6d6; /* hover on cream surfaces */
+  --mist:     #e7eff0; /* cool clinical tint */
+
+  /* Brass — warm metallic accent */
+  --brass-700: #9a7536;
+  --brass-600: #b88d4a; /* primary brass */
+  --brass-500: #cba15d; /* brass hover (lighter) */
+  --brass-200: #ead7b5; /* brass tint on dark */
+
+  /* Clinical blue */
+  --blue-700: #235d72;
+  --blue-600: #2b6f88; /* primary clinical blue */
+  --blue-500: #3a8199;
+  --blue-100: #d8e6ea; /* blue tint surface */
+
+  /* Sage */
+  --sage-700: #51614f;
+  --sage-600: #637968; /* primary sage */
+  --sage-100: #e2e9e2; /* sage tint surface */
+
+  /* Burgundy / wine — restrained, used sparingly */
+  --wine-700: #6c3540;
+  --wine-600: #813e4a; /* primary burgundy */
+  --wine-100: #efdfe0; /* wine tint surface */
+
+  /* ---- Semantic aliases ---------------------------------------------- */
+  --text-strong:  var(--navy-600);
+  --text-body:    rgba(19, 43, 53, 0.78);
+  --text-muted:   rgba(19, 43, 53, 0.62);
+  --text-on-dark: #ffffff;
+  --text-on-dark-soft: rgba(255, 255, 255, 0.82);
+  --text-on-dark-muted: rgba(255, 255, 255, 0.66);
+
+  --surface-page:   var(--paper);
+  --surface-warm:   var(--cream);
+  --surface-card:   #ffffff;
+  --surface-cool:   var(--mist);
+  --surface-deep:   var(--navy-900);
+  --surface-footer: var(--navy-800);
+
+  --accent-primary:   var(--brass-600); /* primary CTA */
+  --accent-clinical:  var(--blue-600);  /* links, clinical lane */
+  --accent-community: var(--brass-600); /* fellows / community lane */
+  --accent-explore:   var(--sage-600);  /* residents / exploration lane */
+  --accent-formal:    var(--blue-600);  /* consulting lane */
+  --accent-caution:   var(--wine-600);  /* burgundy — indices, partner lane */
+
+  /* Lane identity colors (page differentiation) */
+  --lane-fellows:    var(--brass-600);
+  --lane-residents:  var(--sage-600);
+  --lane-consulting: var(--blue-600);
+  --lane-partner:    var(--wine-600);
+
+  /* Borders & hairlines */
+  --line:        rgba(19, 43, 53, 0.14);
+  --line-strong: rgba(19, 43, 53, 0.24);
+  --line-on-dark: rgba(255, 255, 255, 0.14);
+
+  color-scheme: light;
+}

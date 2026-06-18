@@ -1,0 +1,37 @@
+/* OncoPath Advisory Group — Typography tokens
+ * Display serif: Newsreader. Body/UI sans: Libre Franklin.
+ * Editorial scale — generous display sizes, restrained body. Eyebrows are the
+ * one consistent device: uppercase, bold, lane-colored, no letterspacing.
+ */
+:root {
+  /* Families */
+  --font-display: "Newsreader", Georgia, "Times New Roman", serif;
+  --font-body: "Libre Franklin", ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", sans-serif;
+
+  /* Weights */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-black: 800;
+
+  /* Display serif — fluid, set tight, low contrast weight (~520–560) */
+  --display-1: 540 clamp(3.15rem, 8vw, 7.6rem) / 0.95 var(--font-display);
+  --display-2: 520 clamp(2.4rem, 5vw, 4.5rem) / 1.02 var(--font-display);
+  --display-3: 520 clamp(1.7rem, 3vw, 2.6rem) / 1.08 var(--font-display);
+
+  /* Body sizes */
+  --lead: 400 clamp(1.1rem, 2vw, 1.38rem) / 1.5 var(--font-body);
+  --prose: 400 clamp(1.03rem, 1.7vw, 1.22rem) / 1.6 var(--font-body);
+  --body: 400 1rem / 1.55 var(--font-body);
+  --body-sm: 400 0.92rem / 1.5 var(--font-body);
+  --caption: 400 0.82rem / 1.45 var(--font-body);
+
+  /* Eyebrow / label — the signature editorial device */
+  --eyebrow: 800 0.78rem / 1.2 var(--font-body);
+  --eyebrow-tracking: 0.01em;
+
+  /* Card / sub headings (sans, bold) */
+  --heading-card: 700 1.05rem / 1.2 var(--font-body);
+}
