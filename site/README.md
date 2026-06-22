@@ -4,8 +4,9 @@ A clean, portable, multi-page static website. No build step, no framework — ju
 
 ## Pages
 - `index.html` — umbrella homepage (Fellows / Residents / Consulting lanes)
-- `fellows.html` — Fellows Exchange dinner series + request-a-seat form
+- `fellows.html` — evergreen Fellows Exchange community + interest form
 - `residents.html` — Resident Pathways + interest form
+- `events.html` — event list by city/date with inline event details and event-specific registration
 - `consulting.html` — Consulting services + inquiry form
 - `sponsor.html` — direct-link Sponsor / Partner inquiry (not in the main nav)
 

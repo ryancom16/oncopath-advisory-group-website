@@ -19,6 +19,7 @@ function App() {
     home: HomeScreen,
     fellows: FellowsScreen,
     residents: ResidentsScreen,
+    events: EventsScreen,
     consulting: ConsultingScreen,
     partner: PartnerScreen,
   }[screen];
@@ -26,6 +27,7 @@ function App() {
   const disclaimers = {
     fellows: "Sponsor support, when present, is disclosed. No CME credit is offered unless expressly stated through an accredited provider. Participants should not share identifiable patient information.",
     residents: "Programming is educational and career-oriented. No CME credit is offered unless expressly stated through an accredited provider.",
+    events: "Sponsor support, when present, is disclosed. No CME credit is offered unless expressly stated through an accredited provider. Participants should not share identifiable patient information.",
     consulting: "Website inquiries do not establish a physician-patient relationship. Consulting engagements are scoped separately and subject to applicable clinical, legal, and institutional requirements.",
     partner: "Sponsor support, when present, is disclosed. No CME credit is offered unless expressly stated through an accredited provider. Participants should not share identifiable patient information.",
   };
@@ -36,6 +38,7 @@ function App() {
     home: "Path to Cure: oncology and hematology education, community, and advisory services.",
     fellows: "Path from Training to Practice: physician-led community and education for oncology fellows.",
     residents: "Path from Training to Practice: oncology exploration and mentorship for resident physicians.",
+    events: "Path from Training to Practice: upcoming oncology education and community events.",
     consulting: "Path to Cure: board-certified medical oncology and hematology consulting services.",
     partner: "Path to Cure: physician-led oncology education with carefully scoped partner support.",
   };

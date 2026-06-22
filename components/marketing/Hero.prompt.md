@@ -3,13 +3,13 @@ The signature OncoPath hero: private-dining photo behind a navy gradient scrim, 
 ```jsx
 <Hero
   lane="fellows"
-  eyebrow="Chicago oncology fellows dinner series"
+  eyebrow="Oncology fellows community"
   title="OncoPath Fellows Exchange"
-  copy="Physician-led dinner conversations for oncology and hematology fellows."
+  copy="Physician-led small-group community for oncology subspecialty fellows."
   image="assets/imagery/oncopath-hero.png"
   actions={<>
-    <Button as="a" href="#register">Request a Seat</Button>
-    <Button variant="secondary" as="a" href="#dinner">View Dinner Details</Button>
+    <Button as="a" href="#interest">Join Interest List</Button>
+    <Button variant="secondary" as="a" href="./events.html">View Upcoming Events</Button>
   </>}
 />
 ```

@@ -6,8 +6,10 @@ import React from "react";
  */
 export function SiteHeader({ active, links, scrolled = false, style, ...props }) {
   const nav = links || [
+    { label: "Home", href: "./index.html" },
     { label: "Fellows", href: "./fellows.html" },
     { label: "Residents", href: "./residents.html" },
+    { label: "Events", href: "./events.html" },
     { label: "Consulting", href: "./consulting.html" },
   ];
   return (

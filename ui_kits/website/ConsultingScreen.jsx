@@ -20,7 +20,7 @@ function ConsultingScreen({ go }) {
         imageFallback={HERO_IMG}
         focus="16% 46%"
         eyebrow="Medical oncology and hematology consulting"
-        title="Specialist advisory services for complex oncology work."
+        title="Expert oncology advisory."
         copy="Consulting provided by board-certified, licensed medical oncologists and hematologists for organizations that need credible clinical expertise."
         actions={<>
           <Button lane="consulting" as="a" href="#inquiry">Request Consultation</Button>

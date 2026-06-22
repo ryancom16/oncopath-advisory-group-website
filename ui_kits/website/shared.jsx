@@ -6,6 +6,7 @@ const NAV = [
   { key: "home", label: "Home" },
   { key: "fellows", label: "Fellows" },
   { key: "residents", label: "Residents" },
+  { key: "events", label: "Events" },
   { key: "consulting", label: "Consulting" },
 ];
 
@@ -35,7 +36,7 @@ function KitHeader({ screen, go, scrolled }) {
         <span style={{ fontWeight: 700, fontSize: "0.98rem", fontFamily: "var(--font-body)" }}>OncoPath Advisory Group</span>
       </button>
       <nav style={{ display: "flex", alignItems: "center", gap: "clamp(18px,3vw,32px)", fontSize: "0.9rem", fontWeight: 700 }}>
-        {NAV.filter((n) => n.key !== "home").map((n) => (
+        {NAV.map((n) => (
           <button key={n.key} onClick={() => go(n.key)} style={{ background: "none", border: "none", color: "#fff", cursor: "pointer", opacity: screen === n.key ? 1 : 0.86, fontWeight: 700, fontFamily: "var(--font-body)", fontSize: "0.9rem", padding: "4px 0", borderBottom: screen === n.key ? "2px solid var(--brass-600)" : "2px solid transparent" }}>
             {n.label}
           </button>

@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Upcoming Events | OncoPath Advisory Group</title>
+    <meta name="description" content="Upcoming OncoPath Advisory Group dinners, mentorship sessions, and oncology education gatherings." />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="./index.html" aria-label="OncoPath Advisory Group home">
+        <span class="brand-mark" aria-hidden="true">OP</span>
+        <span>OncoPath Advisory Group</span>
+      </a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" data-nav>
+        <a href="./index.html">Home</a>
+        <a href="./fellows.html">Fellows</a>
+        <a href="./residents.html">Residents</a>
+        <a href="./events.html" aria-current="page">Events</a>
+        <a href="./consulting.html">Consulting</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero hero--events">
+        <div class="hero-content">
+          <p class="eyebrow eyebrow--fellows">Upcoming OncoPath events</p>
+          <h1>Upcoming oncology dinners and gatherings.</h1>
+          <p class="hero-copy">
+            A dedicated place for confirmed OncoPath programming: dates, audience, topics, seats, and event-specific
+            registration details.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#event-list">View Event List</a>
+            <a class="button button-secondary" href="#event-register">Request a Seat</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="signal-strip" aria-label="Event positioning">
+        <div><strong>Event list</strong><span>Each event carries its own city, date, audience, and registration status.</span></div>
+        <div><strong>Event details</strong><span>Timing, location, and evening flow stay inside each event listing.</span></div>
+        <div><strong>Future cities</strong><span>Additional cities and formats can be added as separate list entries.</span></div>
+      </section>
+
+      <section class="section section-white" id="event-list">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow eyebrow--fellows">Event List</p>
+            <h2>Upcoming events by city and date.</h2>
+          </div>
+          <div class="event-list" role="list">
+            <article class="event-card" role="listitem">
+              <div class="event-card-main">
+                <p class="event-date">Date to be announced</p>
+                <h3>Chicago Fellows Dinner</h3>
+                <p>A focused dinner for oncology and hematology fellows in the Chicago area, built around clinical education, practical guidance, and peer conversation after the clinical day.</p>
+                <div class="event-meta" aria-label="Chicago Fellows Dinner details">
+                  <span><strong>City</strong>Chicago</span>
+                  <span><strong>Date</strong>To be announced</span>
+                  <span><strong>Time</strong>6:30 PM to 8:30 PM</span>
+                  <span><strong>Audience</strong>Oncology and hematology fellows</span>
+                  <span><strong>Format</strong>Dinner and moderated discussion</span>
+                  <span><strong>Seats</strong>Limited</span>
+                </div>
+                <div class="event-agenda" aria-label="Chicago Fellows Dinner evening flow">
+                  <h4>Evening flow</h4>
+                  <div class="event-agenda-grid">
+                    <span><strong>6:30-7:00</strong>Arrival, introductions, networking, and optional cocktails.</span>
+                    <span><strong>7:00-7:30</strong>Fellow-led journal club, new research discussion, or clinical topic.</span>
+                    <span><strong>7:30-8:00</strong>Practical topic: career paths, publishing, mentorship, finance, or fellowship navigation.</span>
+                    <span><strong>8:00-8:30</strong>Dessert and social hour for peer connection and informal conversations.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="event-card-actions">
+                <span class="event-status">Date pending</span>
+                <a class="button button-primary" href="#event-register">Request Seat</a>
+              </div>
+            </article>
+          </div>
+          <p class="event-note">As additional dates or cities are confirmed, each one should be added here as its own list item with its own date, city, audience, status, and optional agenda outline.</p>
+        </div>
+      </section>
+
+      <section class="section section-light">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow eyebrow--fellows">Future Event Types</p>
+            <h2>More ways to connect across cancer-care training.</h2>
+          </div>
+          <div class="card-grid">
+            <article class="principle-card"><span class="card-index">01</span><h3>Fellow dinners</h3><p>Medical, hematologic, surgical, radiation, and pathology-adjacent oncology fellows.</p></article>
+            <article class="principle-card"><span class="card-index">02</span><h3>Resident sessions</h3><p>Mentorship and specialty exploration for residents considering oncology or caring for cancer patients.</p></article>
+            <article class="principle-card"><span class="card-index">03</span><h3>Research workshops</h3><p>Small sessions on abstracts, manuscripts, mentorship, and building scholarly direction.</p></article>
+            <article class="principle-card"><span class="card-index">04</span><h3>Career roundtables</h3><p>Academia, hospital practice, private practice, industry, and hybrid career paths.</p></article>
+            <article class="principle-card"><span class="card-index">05</span><h3>Financial basics</h3><p>Practical financial literacy designed for physicians in training and early practice.</p></article>
+            <article class="principle-card"><span class="card-index">06</span><h3>Social gatherings</h3><p>Low-pressure events where physicians can find peers, friends, and mentors.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-white" id="event-register">
+        <div class="section-inner contact-layout">
+          <div class="intro">
+            <p class="eyebrow eyebrow--fellows">Request a Seat</p>
+            <h2>Request a seat or event updates.</h2>
+            <p>Choose an event and share a few details so the OncoPath team can confirm fit, send final information, and account for dietary or accessibility needs.</p>
+          </div>
+          <form class="contact-form" data-contact-form data-form-kind="event">
+            <label>Full name<input type="text" name="name" autocomplete="name" placeholder="Your name" /></label>
+            <label>Email<input type="email" name="email" autocomplete="email" placeholder="name@example.com" /></label>
+            <label>Program / institution<input type="text" name="program" placeholder="Program or institution" /></label>
+            <label>Event of interest
+              <select name="event">
+                <option>Chicago Fellows Dinner - date to be announced</option>
+                <option>Future OncoPath event</option>
+              </select>
+            </label>
+            <label>Role or training path
+              <select name="trainingPath">
+                <option>Hematology-oncology fellow</option>
+                <option>Medical oncology fellow</option>
+                <option>Radiation oncology resident or fellow</option>
+                <option>Surgical oncology resident or fellow</option>
+                <option>Pathology resident or fellow</option>
+                <option>Resident physician</option>
+                <option>Other / not listed</option>
+              </select>
+            </label>
+            <label>Specialty focus<input type="text" name="specialty" placeholder="Disease area, oncology specialty, or interest" /></label>
+            <label>Topics you would value<textarea name="topics" rows="3" placeholder="Research, publishing, career paths, mentorship, financial basics..."></textarea></label>
+            <label>Dietary or accessibility notes<textarea name="note" rows="2" placeholder="Optional"></textarea></label>
+            <button class="button button-primary" type="submit">Request Seat</button>
+            <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>OncoPath Advisory Group</strong>
+        <span class="brand-line">Path from Training to Practice: upcoming oncology education and community events.</span>
+        <a class="footer-link" href="./sponsor.html">Sponsor inquiries</a>
+      </div>
+      <p class="disclaimer">
+        Sponsor support, when present, is disclosed. No CME credit is offered unless expressly stated through an
+        accredited provider. Participants should not share identifiable patient information.
+      </p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
