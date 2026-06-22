@@ -21,6 +21,7 @@ dining photo until you add the real file. Drop these into `../assets/imagery/`:
 | Page | Expected file | Suggested subject |
 | --- | --- | --- |
 | Fellows | `assets/imagery/hero-fellows.png` | warm private-dining / community |
+| Events | `assets/imagery/hero-events.png` | overhead private-dining / event registration |
 | Residents | `assets/imagery/hero-residents.png` | mentorship / study / exploration |
 | Consulting | `assets/imagery/hero-consulting.png` | executive advisory / clinical review |
 

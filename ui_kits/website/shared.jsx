@@ -13,6 +13,7 @@ const NAV = [
 const HERO_IMG = "../../assets/imagery/oncopath-hero.png";
 // Page-specific hero photos — drop these files in to override the shared photo.
 const HERO_FELLOWS = "../../assets/imagery/hero-fellows.png";
+const HERO_EVENTS = "../../assets/imagery/hero-events.png";
 const HERO_RESIDENTS = "../../assets/imagery/hero-residents.png";
 const HERO_CONSULTING = "../../assets/imagery/hero-consulting.png";
 
@@ -110,4 +111,4 @@ function InquiryForm({ children, cta, message }) {
   );
 }
 
-Object.assign(window, { NAV, HERO_IMG, HERO_FELLOWS, HERO_RESIDENTS, HERO_CONSULTING, KitHeader, Section, SectionHeading, TwoColumn, BoundaryPanel, InquiryForm });
+Object.assign(window, { NAV, HERO_IMG, HERO_FELLOWS, HERO_EVENTS, HERO_RESIDENTS, HERO_CONSULTING, KitHeader, Section, SectionHeading, TwoColumn, BoundaryPanel, InquiryForm });

@@ -6,9 +6,9 @@ function EventsScreen() {
     <div>
       <Hero
         lane="fellows"
-        image={HERO_FELLOWS}
+        image={HERO_EVENTS}
         imageFallback={HERO_IMG}
-        focus="76% 78%"
+        focus="center"
         eyebrow="Upcoming OncoPath events"
         title="Upcoming oncology dinners and gatherings."
         copy="Browse upcoming OncoPath dinners, mentorship sessions, and cancer-care community gatherings by city, date, audience, topic, and seat status."
