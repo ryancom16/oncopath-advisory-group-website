@@ -86,9 +86,9 @@ function EventsScreen() {
       />
 
       <SignalStrip items={[
-        { label: "One list", detail: "Every OncoPath dinner, workshop, and roundtable in a single place." },
-        { label: "Scannable", detail: "Date, city, audience, and seat status at a glance for each event." },
-        { label: "Details on demand", detail: "Open an event for its own logistics and evening flow." },
+        { label: "Chicago pilot", detail: "Limited-seat oncology gatherings beginning in Chicago." },
+        { label: "Small rooms", detail: "Dinners, workshops, and roundtables built for real conversation." },
+        { label: "Training to practice", detail: "Mentorship, research, career paths, financial basics, and peer connection." },
       ]} />
 
       <Section bg="white" id="event-list">
