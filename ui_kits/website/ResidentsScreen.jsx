@@ -82,12 +82,14 @@ function ResidentsScreen({ go }) {
         <div style={{ display: "grid", gap: "clamp(36px,7vw,90px)", gridTemplateColumns: "minmax(0,0.95fr) minmax(0,1fr)", alignItems: "start" }}>
           <div>
             <Eyebrow lane="residents">Resident Interest</Eyebrow>
-            <h2 style={{ font: "var(--display-2)", margin: "0 0 24px" }}>Tell us what would help you explore oncology.</h2>
-            <p style={{ color: "var(--text-body)", fontSize: "1.08rem", maxWidth: 480, margin: 0 }}>Join the resident interest list for future programming, mentorship events, and educational sessions.</p>
+            <h2 style={{ font: "var(--display-2)", margin: "0 0 24px" }}>Request a spot at an upcoming event.</h2>
+            <p style={{ color: "var(--text-body)", fontSize: "1.08rem", maxWidth: 480, margin: "0 0 18px" }}>Choose an event and share a few details so the OncoPath team can confirm fit and send final information. See all upcoming events.</p>
+            <EventCompactList lane="residents" />
           </div>
-          <InquiryForm cta="Join Interest List" message={(n) => `Thank you, ${n}. Your resident interest form has been prepared for the OncoPath team.`}>
+          <InquiryForm cta="Request a Spot" message={(n) => `Thank you, ${n}. Your request has been prepared for the OncoPath team.`}>
             <Field label="Full name" name="name" placeholder="Your name" />
             <Field label="Email" type="email" name="email" placeholder="name@example.com" />
+            <Select label="Event of interest" name="event" options={eventOptionsForLane("residents")} />
             <Field label="Residency program / institution" name="program" placeholder="Program or institution" />
             <Select label="Training year" name="trainingYear" options={["PGY-1","PGY-2","PGY-3","PGY-4+","Other / not listed"]} />
             <Field label="Current specialty or interest" name="specialty" placeholder="Internal medicine, surgery, radiation oncology…" />

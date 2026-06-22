@@ -101,12 +101,19 @@
         <div class="section-inner contact-layout">
           <div class="intro">
             <p class="eyebrow eyebrow--fellows">Fellows Interest</p>
-            <h2>Join the Fellows Exchange interest list.</h2>
-            <p>Share a few details so the OncoPath team can learn what programming would be valuable and send updates when relevant fellow-facing events open.</p>
+            <h2>Request a seat at an upcoming dinner.</h2>
+            <p>Choose an event below and share a few details so the OncoPath team can confirm fit and send final information. See <a href="./events.html">all upcoming events &rarr;</a></p>
+            <div class="event-compact-list" data-events-compact="fellows"></div>
           </div>
-          <form class="contact-form" data-contact-form data-form-kind="fellows-interest">
+          <form class="contact-form" data-contact-form data-form-kind="signup">
+            <input type="hidden" name="source" value="fellows" />
             <label>Full name<input type="text" name="name" autocomplete="name" placeholder="Your name" /></label>
             <label>Email<input type="email" name="email" autocomplete="email" placeholder="name@example.com" /></label>
+            <label>Event of interest
+              <select name="event" data-events-options="fellows">
+                <option>A future OncoPath event</option>
+              </select>
+            </label>
             <label>Fellowship program / institution<input type="text" name="program" placeholder="Program or institution" /></label>
             <label>Training year
               <select name="trainingYear">
@@ -119,7 +126,7 @@
             </label>
             <label>Specialty focus<input type="text" name="specialty" placeholder="Medical, surgical, radiation, hematologic oncology, or interest" /></label>
             <label>Topics you would value<textarea name="topics" rows="3" placeholder="Research, publishing, career paths, mentorship, financial basics..."></textarea></label>
-            <button class="button button-primary" type="submit">Join Interest List</button>
+            <button class="button button-primary" type="submit">Request a Seat</button>
             <p class="form-status" data-form-status role="status" aria-live="polite"></p>
           </form>
         </div>
@@ -138,6 +145,7 @@
       </p>
     </footer>
 
+    <script src="./events-data.js?v=20260622-event-system"></script>
     <script src="./script.js"></script>
   </body>
 </html>

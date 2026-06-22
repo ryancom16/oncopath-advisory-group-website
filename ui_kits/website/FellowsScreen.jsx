@@ -73,16 +73,14 @@ function FellowsScreen({ go }) {
         <div style={{ display: "grid", gap: "clamp(36px,7vw,90px)", gridTemplateColumns: "minmax(0,0.95fr) minmax(0,1fr)", alignItems: "start" }}>
           <div>
             <SectionHeadingInline eyebrow="Fellows Interest" lane="fellows" />
-            <h2 style={{ font: "var(--display-2)", margin: "0 0 24px" }}>Join the Fellows Exchange interest list.</h2>
-            <p style={{ color: "var(--text-body)", fontSize: "1.08rem", maxWidth: 480, margin: "0 0 18px" }}>Share a few details so the OncoPath team can learn what programming would be valuable and send updates when relevant fellow-facing events open.</p>
-            <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
-              <Tag lane="fellows">Fellows community</Tag>
-              <Tag>Event updates</Tag>
-            </div>
+            <h2 style={{ font: "var(--display-2)", margin: "0 0 24px" }}>Request a seat at an upcoming dinner.</h2>
+            <p style={{ color: "var(--text-body)", fontSize: "1.08rem", maxWidth: 480, margin: "0 0 18px" }}>Choose an event below and share a few details so the OncoPath team can confirm fit and send final information. See all upcoming events.</p>
+            <EventCompactList lane="fellows" />
           </div>
-          <InquiryForm cta="Join Interest List" message={(n) => `Thank you, ${n}. Your fellows interest form has been prepared for the OncoPath team.`}>
+          <InquiryForm cta="Request a Seat" message={(n) => `Thank you, ${n}. Your request has been prepared for the OncoPath team.`}>
             <Field label="Full name" name="name" placeholder="Your name" />
             <Field label="Email" type="email" name="email" placeholder="name@example.com" />
+            <Select label="Event of interest" name="event" options={eventOptionsForLane("fellows")} />
             <Field label="Fellowship program / institution" name="program" placeholder="Program or institution" />
             <Select label="Training year" name="trainingYear" options={["First-year fellow","Second-year fellow","Third-year fellow","Chief fellow","Other / not listed"]} />
             <Field label="Specialty focus" name="specialty" placeholder="Medical, surgical, radiation, hematologic oncology, or interest" />

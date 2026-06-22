@@ -4,15 +4,16 @@ A clean, portable, multi-page static website. No build step, no framework — ju
 
 ## Pages
 - `index.html` — umbrella homepage (Fellows / Residents / Events / Consulting lanes)
-- `fellows.html` — evergreen Fellows Exchange community + interest form
-- `residents.html` — Resident Pathways + interest form
-- `events.html` — event list by city/date with inline event details and event-specific registration
+- `fellows.html` — evergreen Fellows Exchange community + compact event strip + request form
+- `residents.html` — Resident Pathways + compact event strip + request form
+- `events.html` — data-driven event list with expandable details and event-specific registration
 - `consulting.html` — Consulting services + inquiry form
 - `sponsor.html` — direct-link Sponsor / Partner inquiry (not in the main nav)
 
 ## Files
 - `styles.css` — self-contained styles (tokens + components mirror the design system)
 - `script.js` — header scroll state, mobile nav, form confirmation messages
+- `events-data.js` — single source of truth for public event rows, compact event strips, and event dropdowns
 
 ## Hero images — add these before launch
 Each page's hero references a page-specific photo and falls back to the shared

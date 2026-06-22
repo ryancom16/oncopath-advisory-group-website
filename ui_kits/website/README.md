@@ -7,9 +7,9 @@ A high-fidelity, click-through recreation of the OncoPath Advisory Group public 
 | Screen | File | Lane / temperature | Distinct motif |
 | --- | --- | --- | --- |
 | Home | `HomeScreen.jsx` | Brass / umbrella | Four lane cards with top accent bars |
-| Fellows Exchange | `FellowsScreen.jsx` | Brass / warm, social | Evergreen community model + interest form |
-| Residents | `ResidentsScreen.jsx` | Sage / exploratory | Connected horizontal pathway, not the dinner timeline |
-| Events | `EventsScreen.jsx` | Brass / operational | Event list by city/date + inline event details |
+| Fellows Exchange | `FellowsScreen.jsx` | Brass / warm, social | Evergreen community model + compact event strip + request form |
+| Residents | `ResidentsScreen.jsx` | Sage / exploratory | Connected horizontal pathway + compact event strip |
+| Events | `EventsScreen.jsx` | Brass / operational | Scalable event rows with expandable per-event details |
 | Consulting | `ConsultingScreen.jsx` | Blue / executive | Quiet services ledger rows + scope checklist |
 | Sponsor / Partner | `PartnerScreen.jsx` | Burgundy / operational | Direct-link only, never in main nav |
 
@@ -21,4 +21,4 @@ Open `index.html`. Loads React 18 UMD + Babel + `_ds_bundle.js`, then the screen
 
 ## Page differentiation principle
 
-Each lane intentionally varies layout, section sequence, density, accent color, and CTA so a visitor immediately senses moving from community to exploration to events to consulting to partner inquiry while staying one coherent OncoPath brand. Events is a list of city/date-specific events; timing, evening flow, and status live inside each event listing, not as standalone schedule sections and not on the evergreen Fellows page. Sponsor/compliance material lives only on the Partner surface.
+Each lane intentionally varies layout, section sequence, density, accent color, and CTA so a visitor immediately senses moving from community to exploration to events to consulting to partner inquiry while staying one coherent OncoPath brand. Events is the source of truth for city/date-specific programming; timing, evening flow, status, compact page strips, and dropdown choices derive from event records rather than standalone schedule sections. Sponsor/compliance material lives only on the Partner surface.

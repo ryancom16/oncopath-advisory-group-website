@@ -111,4 +111,37 @@ function InquiryForm({ children, cta, message }) {
   );
 }
 
-Object.assign(window, { NAV, HERO_IMG, HERO_FELLOWS, HERO_EVENTS, HERO_RESIDENTS, HERO_CONSULTING, KitHeader, Section, SectionHeading, TwoColumn, BoundaryPanel, InquiryForm });
+function eventOptionsForLane(lane) {
+  const events = window.ONCOPATH_EVENTS || [];
+  const list = events.filter((event) => !lane || event.lanes?.includes(lane));
+  return list.map((event) => event.title).concat(["A future OncoPath event"]);
+}
+
+function EventCompactList({ lane }) {
+  const events = (window.ONCOPATH_EVENTS || []).filter((event) => event.lanes?.includes(lane));
+  if (!events.length) {
+    return <p style={{ color: "var(--text-muted)", fontSize: "0.95rem", margin: 0 }}>New events are being planned. Check back soon.</p>;
+  }
+
+  return (
+    <div style={{ display: "grid", gap: 10, marginTop: 22 }}>
+      {events.map((event) => (
+        <button
+          key={event.id}
+          type="button"
+          onClick={() => window.location.hash = "events"}
+          style={{ display: "grid", gridTemplateColumns: "auto 1fr auto", gap: 16, alignItems: "center", textAlign: "left", background: "#fff", border: "1px solid var(--line)", borderRadius: "var(--radius)", boxShadow: "var(--shadow-card)", padding: "14px 18px", cursor: "pointer", font: "inherit" }}
+        >
+          <span style={{ display: "grid", gap: 2, minWidth: 96 }}>
+            <span style={{ color: "var(--brass-600)", fontSize: "0.68rem", fontWeight: 900, textTransform: "uppercase", letterSpacing: "0.03em" }}>{event.dateTag}</span>
+            <span style={{ color: "var(--text-muted)", fontSize: "0.76rem", fontWeight: 600 }}>{event.city}</span>
+          </span>
+          <span style={{ color: "var(--navy-600)", fontWeight: 700, fontSize: "0.98rem", minWidth: 0 }}>{event.title}</span>
+          <span style={{ display: "inline-flex", alignItems: "center", padding: "4px 10px", borderRadius: "var(--radius-pill)", background: event.status === "Limited seats" ? "var(--brass-200)" : "var(--blue-100)", color: event.status === "Limited seats" ? "var(--wine-700)" : "var(--blue-600)", fontSize: "0.74rem", fontWeight: 800, whiteSpace: "nowrap" }}>{event.status}</span>
+        </button>
+      ))}
+    </div>
+  );
+}
+
+Object.assign(window, { NAV, HERO_IMG, HERO_FELLOWS, HERO_EVENTS, HERO_RESIDENTS, HERO_CONSULTING, KitHeader, Section, SectionHeading, TwoColumn, BoundaryPanel, InquiryForm, eventOptionsForLane, EventCompactList });

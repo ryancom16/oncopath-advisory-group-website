@@ -97,12 +97,19 @@
         <div class="section-inner contact-layout">
           <div class="intro">
             <p class="eyebrow eyebrow--residents">Resident Interest</p>
-            <h2>Tell us what would help you explore oncology.</h2>
-            <p>Join the resident interest list for upcoming programming, mentorship events, and educational sessions.</p>
+            <h2>Request a spot at an upcoming event.</h2>
+            <p>Choose an event and share a few details so the OncoPath team can confirm fit and send final information. See <a href="./events.html">all upcoming events &rarr;</a></p>
+            <div class="event-compact-list" data-events-compact="residents"></div>
           </div>
-          <form class="contact-form" data-contact-form data-form-kind="resident">
+          <form class="contact-form" data-contact-form data-form-kind="signup">
+            <input type="hidden" name="source" value="residents" />
             <label>Full name<input type="text" name="name" autocomplete="name" placeholder="Your name" /></label>
             <label>Email<input type="email" name="email" autocomplete="email" placeholder="name@example.com" /></label>
+            <label>Event of interest
+              <select name="event" data-events-options="residents">
+                <option>A future OncoPath event</option>
+              </select>
+            </label>
             <label>Residency program / institution<input type="text" name="program" placeholder="Program or institution" /></label>
             <label>Training year
               <select name="trainingYear">
@@ -115,7 +122,7 @@
             </label>
             <label>Current specialty or interest<input type="text" name="specialty" placeholder="Internal medicine, surgery, radiation oncology..." /></label>
             <label>Topics you would value<textarea name="topics" rows="3" placeholder="Fellowship applications, research, clinical exposure, mentorship..."></textarea></label>
-            <button class="button button-residents" type="submit">Join Interest List</button>
+            <button class="button button-residents" type="submit">Request a Spot</button>
             <p class="form-status" data-form-status role="status" aria-live="polite"></p>
           </form>
         </div>
@@ -133,6 +140,7 @@
       </p>
     </footer>
 
+    <script src="./events-data.js?v=20260622-event-system"></script>
     <script src="./script.js"></script>
   </body>
 </html>
