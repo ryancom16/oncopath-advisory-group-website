@@ -1,4 +1,4 @@
-// Homepage — umbrella brand architecture, three lanes.
+// Homepage — umbrella brand architecture, four lanes.
 function HomeScreen({ go }) {
   const { Hero, Button, SignalStrip, LaneCard } = window.OncoPathDesignSystem_1b0a1a;
   return (
@@ -8,9 +8,10 @@ function HomeScreen({ go }) {
         image={HERO_IMG}
         focus="center"
         title="OncoPath Advisory Group"
-        copy="Physician-led oncology and hematology education, community, and advisory services for the path from training to practice and from diagnosis to cure."
+        copy="Physician-led oncology community, education, and advisory services for clinicians moving from training to practice, and for organizations working along the path to better cancer care."
         actions={<>
-          <Button as="button" onClick={() => go("fellows")}>Fellows Exchange</Button>
+          <Button as="button" onClick={() => go("events")}>Upcoming Events</Button>
+          <Button variant="secondary" as="button" onClick={() => go("fellows")}>Fellows Exchange</Button>
           <Button variant="secondary" as="button" onClick={() => go("consulting")}>Consulting Services</Button>
         </>}
       />
@@ -22,8 +23,8 @@ function HomeScreen({ go }) {
       ]} />
 
       <Section bg="white">
-        <SectionHeading eyebrow="Practice Areas" lane="fellows" title="Three lanes under one physician-led advisory group." />
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 18 }}>
+        <SectionHeading eyebrow="Practice Areas" lane="fellows" title="Four lanes under one physician-led advisory group." />
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(220px,1fr))", gap: 18 }}>
           <LaneCard lane="fellows" index="01" title="Oncology Subspecialty Fellows" link={{ label: "Explore Fellows Exchange →", href: "#" }} onClick={() => go("fellows")} style={{ cursor: "pointer" }}>
             Dinner series, peer community, mentorship, research and publishing guidance, and career navigation for fellows across the oncologic subspecialties — medical, surgical, radiation, and hematologic oncology.
           </LaneCard>
@@ -32,6 +33,9 @@ function HomeScreen({ go }) {
           </LaneCard>
           <LaneCard lane="consulting" index="03" title="Consulting Services" link={{ label: "View Consulting Services →", href: "#" }} onClick={() => go("consulting")} style={{ cursor: "pointer" }}>
             Medical oncology and hematology consulting provided by board-certified, licensed medical oncologists and hematologists.
+          </LaneCard>
+          <LaneCard lane="events" index="04" title="Upcoming Events" link={{ label: "View Upcoming Events →", href: "#" }} onClick={() => go("events")} style={{ cursor: "pointer" }}>
+            Small-group dinners, mentorship sessions, and oncology community gatherings by city, date, audience, and registration status.
           </LaneCard>
         </div>
       </Section>

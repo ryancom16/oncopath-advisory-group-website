@@ -10,7 +10,7 @@ function PartnerScreen({ go }) {
         focus="94% 84%"
         eyebrow="Sponsor and partner inquiry overview"
         title="Support physician-led oncology education and career connection."
-        copy="OncoPath Fellows Exchange creates professional, small-group educational dinners for oncology and hematology fellows in Chicago, with carefully structured sponsor and career-partner roles."
+        copy="OncoPath creates physician-led, small-group oncology education and community events, beginning in Chicago, with carefully structured roles for sponsors, recruiters, and career partners."
         actions={<>
           <Button lane="partner" as="a" href="#inquiry">Request a Conversation</Button>
           <Button variant="secondary" as="button" onClick={() => go("fellows")}>View Fellows Site</Button>

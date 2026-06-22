@@ -2,7 +2,7 @@ import React from "react";
 
 /**
  * Homepage lane card — top accent bar in the lane color, two-digit index,
- * heading, copy, and a quiet text link. Makes the three offerings feel
+ * heading, copy, and a quiet text link. Makes the offerings feel
  * related but distinct.
  */
 export function LaneCard({ lane = "fellows", index, title, children, link, style, ...props }) {
@@ -10,6 +10,7 @@ export function LaneCard({ lane = "fellows", index, title, children, link, style
     fellows: "var(--brass-600)",
     residents: "var(--sage-600)",
     consulting: "var(--blue-600)",
+    events: "var(--wine-600)",
     partner: "var(--wine-600)",
   }[lane];
 

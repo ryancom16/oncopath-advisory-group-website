@@ -211,7 +211,7 @@ h2 { font-family: var(--font-display); font-weight: 520; font-size: clamp(2rem, 
 .principle-card p { color: var(--text-body); margin: 0; }
 
 /* Lane cards (home) */
-.lane-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.lane-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
 .lane-card { display: flex; flex-direction: column; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow-card); overflow: hidden; transition: box-shadow 180ms var(--ease), transform 180ms var(--ease); }
 .lane-card:hover { box-shadow: var(--shadow-raised); transform: translateY(-2px); }
 .lane-card .bar { height: 6px; }
@@ -223,6 +223,7 @@ h2 { font-family: var(--font-display); font-weight: 520; font-size: clamp(2rem, 
 .lane--fellows .bar { background: var(--brass-600); } .lane--fellows .idx, .lane--fellows .link { color: var(--brass-600); }
 .lane--residents .bar { background: var(--sage-600); } .lane--residents .idx, .lane--residents .link { color: var(--sage-600); }
 .lane--consulting .bar { background: var(--blue-600); } .lane--consulting .idx, .lane--consulting .link { color: var(--blue-600); }
+.lane--events .bar { background: var(--wine-600); } .lane--events .idx, .lane--events .link { color: var(--wine-600); }
 
 /* ---- Events list ---- */
 .event-list { display: grid; gap: 18px; }

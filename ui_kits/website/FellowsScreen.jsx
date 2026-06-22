@@ -27,11 +27,10 @@ function FellowsScreen({ go }) {
         <TwoColumn
           left={<>
             <SectionHeadingInline eyebrow="Fellows Exchange" lane="fellows" />
-            <h2 style={{ font: "var(--display-2)", margin: 0 }}>A better room for early-career oncology learning.</h2>
+            <h2 style={{ font: "var(--display-2)", margin: 0 }}>Worth showing up for after a long clinical day.</h2>
           </>}
           right={<div style={{ font: "var(--prose)", color: "var(--text-body)" }}>
-            <p style={{ marginTop: 0 }}>OncoPath Fellows Exchange brings fellows across oncology and adjacent cancer-care specialties together for focused, physician-led education and community.</p>
-            <p style={{ marginBottom: 0 }}>The format is intentionally smaller than a conference: one useful topic, a thoughtful room, strong peer conversation, and practical guidance fellows can carry into research, publishing, career decisions, and the transition to attending life.</p>
+            <p style={{ marginTop: 0, marginBottom: 0 }}>OncoPath Fellows Exchange is designed for fellows who want more than another dinner lecture: a smaller room, useful conversation, real peer connection, and practical guidance on research, publishing, career paths, money, mentorship, and life after fellowship.</p>
           </div>}
         />
       </Section>

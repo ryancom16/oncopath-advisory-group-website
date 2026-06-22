@@ -19,7 +19,7 @@ function ResidentsScreen({ go }) {
         focus="58% 20%"
         eyebrow="Resident physician pathways"
         title="Explore the path into oncology."
-        copy="Educational and mentorship programming for resident physicians considering hematology-oncology, plus residents in other specialties who want stronger oncology perspective."
+        copy="Mentorship and educational programming for residents exploring cancer-care careers, including hematology-oncology, radiation oncology, surgical oncology, pathology, and other specialties involved in oncology care."
         actions={<>
           <Button lane="residents" as="a" href="#interest">Join Interest List</Button>
           <Button variant="secondary" as="a" href="#programs">View Program Areas</Button>
@@ -36,7 +36,7 @@ function ResidentsScreen({ go }) {
         <TwoColumn
           left={<>
             <Eyebrow lane="residents">Residents</Eyebrow>
-            <h2 style={{ font: "var(--display-2)", margin: 0 }}>For residents considering what oncology could become.</h2>
+            <h2 style={{ font: "var(--display-2)", margin: 0 }}>For residents finding their place in cancer care.</h2>
           </>}
           right={<div style={{ font: "var(--prose)", color: "var(--text-body)" }}>
             <p style={{ marginTop: 0 }}>Residents often encounter oncology through inpatient consults, clinic rotations, research experiences, or personal curiosity before they know whether hematology-oncology is the right long-term path.</p>

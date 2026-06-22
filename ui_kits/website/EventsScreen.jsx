@@ -11,7 +11,7 @@ function EventsScreen() {
         focus="76% 78%"
         eyebrow="Upcoming OncoPath events"
         title="Upcoming oncology dinners and gatherings."
-        copy="A dedicated place for confirmed OncoPath programming: dates, audience, topics, seats, and event-specific registration details."
+        copy="Browse upcoming OncoPath dinners, mentorship sessions, and cancer-care community gatherings by city, date, audience, topic, and seat status."
         actions={<>
           <Button as="a" href="#event-list">View Event List</Button>
           <Button variant="secondary" as="a" href="#event-register">Request a Seat</Button>
@@ -57,7 +57,7 @@ function EventsScreen() {
             <Field label="Full name" name="name" placeholder="Your name" />
             <Field label="Email" type="email" name="email" placeholder="name@example.com" />
             <Field label="Program / institution" name="program" placeholder="Program or institution" />
-            <Select label="Event of interest" name="event" options={["Chicago Fellows Dinner - date to be announced","Future OncoPath event"]} />
+            <Select label="Event of interest" name="event" options={["Chicago Oncology Fellows Dinner - date to be announced","Future OncoPath event"]} />
             <Select label="Role or training path" name="trainingPath" options={["Hematology-oncology fellow","Medical oncology fellow","Radiation oncology resident or fellow","Surgical oncology resident or fellow","Pathology resident or fellow","Resident physician","Other / not listed"]} />
             <Field label="Specialty focus" name="specialty" placeholder="Disease area, oncology specialty, or interest" />
             <Textarea label="Topics you would value" name="topics" rows={3} placeholder="Research, publishing, career paths, mentorship, financial basics..." />
@@ -75,7 +75,7 @@ function EventListRow() {
     ["City", "Chicago"],
     ["Date", "To be announced"],
     ["Time", "6:30 PM to 8:30 PM"],
-    ["Audience", "Oncology and hematology fellows"],
+    ["Audience", "Oncology fellows and cancer-care trainees"],
     ["Format", "Dinner and moderated discussion"],
     ["Seats", "Limited"],
   ];
@@ -90,8 +90,8 @@ function EventListRow() {
     <article style={{ display: "grid", gridTemplateColumns: "minmax(0,1fr) auto", gap: "clamp(24px,5vw,58px)", alignItems: "start", background: "#fff", border: "1px solid var(--line)", borderRadius: "var(--radius)", boxShadow: "var(--shadow-card)", padding: "clamp(26px,4vw,40px)" }}>
       <div>
         <p style={{ color: "var(--brass-600)", fontSize: "0.78rem", fontWeight: 900, textTransform: "uppercase", letterSpacing: "0.02em", margin: "0 0 12px" }}>Date to be announced</p>
-        <h3 style={{ font: "var(--display-3)", fontSize: "clamp(1.7rem,3vw,2.5rem)", margin: "0 0 12px" }}>Chicago Fellows Dinner</h3>
-        <p style={{ color: "var(--text-body)", maxWidth: 720, margin: 0 }}>A focused dinner for oncology and hematology fellows in the Chicago area, built around clinical education, practical guidance, and peer conversation after the clinical day.</p>
+        <h3 style={{ font: "var(--display-3)", fontSize: "clamp(1.7rem,3vw,2.5rem)", margin: "0 0 12px" }}>Chicago Oncology Fellows Dinner</h3>
+        <p style={{ color: "var(--text-body)", maxWidth: 720, margin: 0 }}>A limited-seat Chicago dinner for oncology fellows and cancer-care trainees, including hematology-oncology, medical oncology, radiation oncology, surgical oncology, and pathology-adjacent training paths.</p>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3,minmax(0,1fr))", gap: 1, marginTop: 28, background: "var(--line)", border: "1px solid var(--line)" }}>
           {meta.map(([label, detail]) => (
             <span key={label} style={{ display: "grid", gap: 6, minHeight: 86, padding: 16, background: "var(--paper)", color: "var(--text-body)" }}>

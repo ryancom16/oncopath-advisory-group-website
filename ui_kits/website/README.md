@@ -6,7 +6,7 @@ A high-fidelity, click-through recreation of the OncoPath Advisory Group public 
 
 | Screen | File | Lane / temperature | Distinct motif |
 | --- | --- | --- | --- |
-| Home | `HomeScreen.jsx` | Brass / umbrella | Three lane cards with top accent bars |
+| Home | `HomeScreen.jsx` | Brass / umbrella | Four lane cards with top accent bars |
 | Fellows Exchange | `FellowsScreen.jsx` | Brass / warm, social | Evergreen community model + interest form |
 | Residents | `ResidentsScreen.jsx` | Sage / exploratory | Connected horizontal pathway, not the dinner timeline |
 | Events | `EventsScreen.jsx` | Brass / operational | Event list by city/date + inline event details |

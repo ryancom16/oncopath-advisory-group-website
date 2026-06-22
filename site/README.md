@@ -3,7 +3,7 @@
 A clean, portable, multi-page static website. No build step, no framework — just HTML + one CSS file + a small JS file. Easy to host anywhere and to port to Framer or Webflow.
 
 ## Pages
-- `index.html` — umbrella homepage (Fellows / Residents / Consulting lanes)
+- `index.html` — umbrella homepage (Fellows / Residents / Events / Consulting lanes)
 - `fellows.html` — evergreen Fellows Exchange community + interest form
 - `residents.html` — Resident Pathways + interest form
 - `events.html` — event list by city/date with inline event details and event-specific registration
