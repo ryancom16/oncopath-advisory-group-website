@@ -36,7 +36,7 @@
             oncology care.
           </p>
           <div class="hero-actions">
-            <a class="button button-residents" href="#interest">Join Interest List</a>
+            <a class="button button-residents" href="./events.html#event-register">Request a Spot</a>
             <a class="button button-secondary" href="#programs">View Program Areas</a>
           </div>
         </div>
@@ -94,37 +94,21 @@
       </section>
 
       <section class="section section-white" id="interest">
-        <div class="section-inner contact-layout">
-          <div class="intro">
+        <div class="section-inner two-column">
+          <div>
             <p class="eyebrow eyebrow--residents">Resident Interest</p>
-            <h2>Request a spot at an upcoming event.</h2>
-            <p>Choose an event and share a few details so the OncoPath team can confirm fit and send final information. See <a href="./events.html">all upcoming events &rarr;</a></p>
+            <h2>Upcoming resident events.</h2>
+            <div class="prose" style="margin-top: 24px;">
+              <p>Resident-focused roundtables, workshops, and mentorship gatherings are listed as dates are confirmed. Review the full event details and request a spot from the Events page.</p>
+            </div>
+            <div class="section-actions">
+              <a class="button button-residents" href="./events.html#event-register">Request a Spot</a>
+              <a class="button button-ghost" href="./events.html#event-list">View All Events</a>
+            </div>
+          </div>
+          <div class="event-preview-list">
             <div class="event-compact-list" data-events-compact="residents"></div>
           </div>
-          <form class="contact-form" data-contact-form data-form-kind="signup">
-            <input type="hidden" name="source" value="residents" />
-            <label>Full name<input type="text" name="name" autocomplete="name" placeholder="Your name" /></label>
-            <label>Email<input type="email" name="email" autocomplete="email" placeholder="name@example.com" /></label>
-            <label>Event of interest
-              <select name="event" data-events-options="residents">
-                <option>A future OncoPath event</option>
-              </select>
-            </label>
-            <label>Residency program / institution<input type="text" name="program" placeholder="Program or institution" /></label>
-            <label>Training year
-              <select name="trainingYear">
-                <option>PGY-1</option>
-                <option>PGY-2</option>
-                <option>PGY-3</option>
-                <option>PGY-4+</option>
-                <option>Other / not listed</option>
-              </select>
-            </label>
-            <label>Current specialty or interest<input type="text" name="specialty" placeholder="Internal medicine, surgery, radiation oncology..." /></label>
-            <label>Topics you would value<textarea name="topics" rows="3" placeholder="Fellowship applications, research, clinical exposure, mentorship..."></textarea></label>
-            <button class="button button-residents" type="submit">Request a Spot</button>
-            <p class="form-status" data-form-status role="status" aria-live="polite"></p>
-          </form>
         </div>
       </section>
     </main>

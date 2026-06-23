@@ -35,7 +35,7 @@ function HomeScreen({ go }) {
             Medical oncology and hematology consulting provided by board-certified, licensed medical oncologists and hematologists.
           </LaneCard>
           <LaneCard lane="events" index="04" title="Upcoming Events" link={{ label: "View Upcoming Events →", href: "#" }} onClick={() => go("events")} style={{ cursor: "pointer" }}>
-            Small-group dinners, mentorship sessions, and oncology community gatherings by city, date, audience, and registration status.
+            Small-group dinners, mentorship sessions, and oncology community gatherings by city, date, audience, and seat status.
           </LaneCard>
         </div>
       </Section>

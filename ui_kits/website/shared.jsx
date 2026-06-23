@@ -117,14 +117,14 @@ function eventOptionsForLane(lane) {
   return list.map((event) => event.title).concat(["A future OncoPath event"]);
 }
 
-function EventCompactList({ lane }) {
+function EventCompactList({ lane, flush = false }) {
   const events = (window.ONCOPATH_EVENTS || []).filter((event) => event.lanes?.includes(lane));
   if (!events.length) {
     return <p style={{ color: "var(--text-muted)", fontSize: "0.95rem", margin: 0 }}>New events are being planned. Check back soon.</p>;
   }
 
   return (
-    <div style={{ display: "grid", gap: 10, marginTop: 22 }}>
+    <div style={{ display: "grid", gap: 10, marginTop: flush ? 0 : 22 }}>
       {events.map((event) => (
         <button
           key={event.id}

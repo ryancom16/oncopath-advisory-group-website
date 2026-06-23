@@ -1,6 +1,6 @@
 // Fellows Exchange - the most human, community-oriented page.
 function FellowsScreen({ go }) {
-  const { Hero, Button, SignalStrip, PrincipleCard, Field, Select, Textarea, Tag } = window.OncoPathDesignSystem_1b0a1a;
+  const { Hero, Button, SignalStrip, PrincipleCard } = window.OncoPathDesignSystem_1b0a1a;
   return (
     <div>
       <Hero
@@ -12,7 +12,7 @@ function FellowsScreen({ go }) {
         title="OncoPath Fellows Exchange"
         copy="Physician-led small-group community for oncology subspecialty fellows: clinical education, peer connection, mentorship, and practical guidance for the path from fellowship to practice."
         actions={<>
-          <Button as="a" href="#interest">Join Interest List</Button>
+          <Button as="button" onClick={() => go("events")}>Request a Seat</Button>
           <Button variant="secondary" as="button" onClick={() => go("events")}>View Upcoming Events</Button>
         </>}
       />
@@ -70,23 +70,18 @@ function FellowsScreen({ go }) {
       </Section>
 
       <Section bg="cream" id="interest">
-        <div style={{ display: "grid", gap: "clamp(36px,7vw,90px)", gridTemplateColumns: "minmax(0,0.95fr) minmax(0,1fr)", alignItems: "start" }}>
-          <div>
+        <TwoColumn
+          left={<>
             <SectionHeadingInline eyebrow="Fellows Interest" lane="fellows" />
-            <h2 style={{ font: "var(--display-2)", margin: "0 0 24px" }}>Request a seat at an upcoming dinner.</h2>
-            <p style={{ color: "var(--text-body)", fontSize: "1.08rem", maxWidth: 480, margin: "0 0 18px" }}>Choose an event below and share a few details so the OncoPath team can confirm fit and send final information. See all upcoming events.</p>
-            <EventCompactList lane="fellows" />
-          </div>
-          <InquiryForm cta="Request a Seat" message={(n) => `Thank you, ${n}. Your request has been prepared for the OncoPath team.`}>
-            <Field label="Full name" name="name" placeholder="Your name" />
-            <Field label="Email" type="email" name="email" placeholder="name@example.com" />
-            <Select label="Event of interest" name="event" options={eventOptionsForLane("fellows")} />
-            <Field label="Fellowship program / institution" name="program" placeholder="Program or institution" />
-            <Select label="Training year" name="trainingYear" options={["First-year fellow","Second-year fellow","Third-year fellow","Chief fellow","Other / not listed"]} />
-            <Field label="Specialty focus" name="specialty" placeholder="Medical, surgical, radiation, hematologic oncology, or interest" />
-            <Textarea label="Topics you would value" name="topics" rows={3} placeholder="Research, publishing, career paths, mentorship, financial basics..." />
-          </InquiryForm>
-        </div>
+            <h2 style={{ font: "var(--display-2)", margin: "0 0 24px" }}>Upcoming fellow events.</h2>
+            <p style={{ color: "var(--text-body)", fontSize: "1.08rem", maxWidth: 520, margin: "0 0 28px" }}>Fellow-focused dinners, workshops, and mentorship gatherings are listed as dates are confirmed. Review the full event details and request a seat from the Events page.</p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 14 }}>
+              <Button as="button" onClick={() => go("events")}>Request a Seat</Button>
+              <Button variant="ghost" as="button" onClick={() => go("events")}>View All Events</Button>
+            </div>
+          </>}
+          right={<EventCompactList lane="fellows" flush />}
+        />
       </Section>
     </div>
   );

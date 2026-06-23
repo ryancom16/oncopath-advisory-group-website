@@ -1,6 +1,6 @@
 // OncoPath events - single source of truth for public event listings.
 // Add or edit an event here once; it renders on the Events page, compact
-// Fellows/Residents strips, and registration dropdowns.
+// Fellows/Residents strips, and the event request dropdown.
 (function () {
   const EVENTS = [
     {

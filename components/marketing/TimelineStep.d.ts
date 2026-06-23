@@ -8,5 +8,5 @@ export interface TimelineStepProps extends React.HTMLAttributes<HTMLElement> {
   children?: React.ReactNode;
 }
 
-/** Numbered agenda / registration-flow step for a 4-column timeline. */
+/** Numbered agenda / request-flow step for a 4-column timeline. */
 export function TimelineStep(props: TimelineStepProps): JSX.Element;

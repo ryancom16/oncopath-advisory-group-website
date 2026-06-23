@@ -15,7 +15,7 @@ OncoPath Advisory Group is an umbrella, physician-led advisory group with **thre
 | Lane | Audience | Emotional temperature | Identity color |
 | --- | --- | --- | --- |
 | **Fellows Exchange** | Heme-onc fellows | Warm, social, energizing — "a curated room after a long clinical day" | Brass |
-| **Resident Pathways** | Residents considering heme-onc / seeking oncology literacy | Exploratory, developmental, mentorship-forward | Sage |
+| **Resident Pathways** | Residents exploring oncology and cancer-care specialties | Exploratory, developmental, mentorship-forward | Sage |
 | **Consulting Services** | Healthcare orgs, med-ed teams, advisory-board planners | Restrained, executive, trust-signalled | Clinical blue |
 | **Sponsor / Partner** (direct-link) | Pharma/biotech sponsors, recruiters, compliance counsel | Operational, compliance-conscious, not marketing | Burgundy |
 
@@ -34,7 +34,7 @@ Long-term, OncoPath is built to span the full **quad** of cancer-care specialtie
 3. Surgical oncology
 4. Oncology-focused pathology / diagnostics
 
-**The MVP does NOT broaden the first event.** The first OncoPath Fellows Exchange remains a Chicago **hematology-oncology fellows** dinner — keep it narrow, simple, and credible. Use the subspecialty-generic framing only at the umbrella level (e.g. the homepage Fellows lane describes the broader subspecialty community); event-specific pages stay heme-onc. Do not imply a multi-specialty program exists before it does, and do not promise national rollout.
+**MVP scope:** The first live product remains a Chicago pilot with limited-seat oncology gatherings. Event records should state the exact intended audience for each gathering. The site may name the broader cancer-care specialty universe, but should not imply every event includes every specialty, and should not promise national rollout before dates and city scope are documented.
 
 ### Hero imagery treatment
 

@@ -1,4 +1,4 @@
-Form controls for OncoPath registration / inquiry forms. Labels are bold sans above the field; focus shows a blue ring.
+Form controls for OncoPath event request / inquiry forms. Labels are bold sans above the field; focus shows a blue ring.
 
 ```jsx
 <Field label="Full name" name="name" placeholder="Your name" />

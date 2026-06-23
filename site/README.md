@@ -4,16 +4,16 @@ A clean, portable, multi-page static website. No build step, no framework — ju
 
 ## Pages
 - `index.html` — umbrella homepage (Fellows / Residents / Events / Consulting lanes)
-- `fellows.html` — evergreen Fellows Exchange community + compact event strip + request form
-- `residents.html` — Resident Pathways + compact event strip + request form
-- `events.html` — data-driven event list with expandable details and event-specific registration
+- `fellows.html` — evergreen Fellows Exchange community + compact event preview + link to Events requests
+- `residents.html` — Resident Pathways + compact event preview + link to Events requests
+- `events.html` — data-driven event list with expandable details and event-specific request form
 - `consulting.html` — Consulting services + inquiry form
 - `sponsor.html` — direct-link Sponsor / Partner inquiry (not in the main nav)
 
 ## Files
 - `styles.css` — self-contained styles (tokens + components mirror the design system)
 - `script.js` — header scroll state, mobile nav, form confirmation messages
-- `events-data.js` — single source of truth for public event rows, compact event strips, and event dropdowns
+- `events-data.js` — single source of truth for public event rows, compact event previews, and event dropdowns
 
 ## Hero images — add these before launch
 Each page's hero references a page-specific photo and falls back to the shared
@@ -22,7 +22,7 @@ dining photo until you add the real file. Drop these into `../assets/imagery/`:
 | Page | Expected file | Suggested subject |
 | --- | --- | --- |
 | Fellows | `assets/imagery/hero-fellows.png` | warm private-dining / community |
-| Events | `assets/imagery/hero-events.png` | overhead private-dining / event registration |
+| Events | `assets/imagery/hero-events.png` | overhead private-dining / event requests |
 | Residents | `assets/imagery/hero-residents.png` | mentorship / study / exploration |
 | Consulting | `assets/imagery/hero-consulting.png` | executive advisory / clinical review |
 

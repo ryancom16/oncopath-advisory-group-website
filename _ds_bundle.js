@@ -807,8 +807,8 @@ Object.assign(__ds_scope, { SiteHeader });
 try { (() => {
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 /**
- * Agenda / registration timeline step — numbered sage dot, time/label heading, copy.
- * Use in a 4-column grid for the evening agenda or registration flow.
+ * Agenda / request timeline step — numbered sage dot, time/label heading, copy.
+ * Use in a 4-column grid for the evening agenda or request flow.
  */
 function TimelineStep({
   step,
@@ -1342,14 +1342,14 @@ function FellowsScreen({
       font: "var(--display-2)",
       margin: "0 0 24px"
     }
-  }, "Register interest for the next Chicago dinner."), /*#__PURE__*/React.createElement("p", {
+  }, "Request a spot for the next Chicago dinner."), /*#__PURE__*/React.createElement("p", {
     style: {
       color: "var(--text-body)",
       fontSize: "1.08rem",
       maxWidth: 480,
       margin: "0 0 18px"
     }
-  }, "Share a few details so the OncoPath team can confirm fit, send final event information, and account for dietary or accessibility needs."), /*#__PURE__*/React.createElement("div", {
+  }, "Choose an event and share a few details. The OncoPath team will confirm availability, send final information, and note any dietary or accessibility needs."), /*#__PURE__*/React.createElement("div", {
     style: {
       display: "flex",
       gap: 8,
@@ -1754,7 +1754,7 @@ function ResidentsScreen({
       lane: "residents",
       as: "a",
       href: "#interest"
-    }, "Join Interest List"), /*#__PURE__*/React.createElement(Button, {
+    }, "Request a Spot"), /*#__PURE__*/React.createElement(Button, {
       variant: "secondary",
       as: "a",
       href: "#programs"
@@ -1895,8 +1895,8 @@ function ResidentsScreen({
       maxWidth: 480,
       margin: 0
     }
-  }, "Join the resident interest list for future programming, mentorship events, and educational sessions.")), /*#__PURE__*/React.createElement(InquiryForm, {
-    cta: "Join Interest List",
+  }, "Review resident-focused programming and request a spot through the Events page.")), /*#__PURE__*/React.createElement(InquiryForm, {
+    cta: "Request a Spot",
     message: n => `Thank you, ${n}. Your resident interest form has been prepared for the OncoPath team.`
   }, /*#__PURE__*/React.createElement(Field, {
     label: "Full name",

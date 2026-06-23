@@ -35,7 +35,7 @@
             mentorship, and practical guidance for the path from fellowship to practice.
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#interest">Join Interest List</a>
+            <a class="button button-primary" href="./events.html#event-register">Request a Seat</a>
             <a class="button button-secondary" href="./events.html">View Upcoming Events</a>
           </div>
         </div>
@@ -98,37 +98,21 @@
       </section>
 
       <section class="section section-light" id="interest">
-        <div class="section-inner contact-layout">
-          <div class="intro">
+        <div class="section-inner two-column">
+          <div>
             <p class="eyebrow eyebrow--fellows">Fellows Interest</p>
-            <h2>Request a seat at an upcoming dinner.</h2>
-            <p>Choose an event below and share a few details so the OncoPath team can confirm fit and send final information. See <a href="./events.html">all upcoming events &rarr;</a></p>
+            <h2>Upcoming fellow events.</h2>
+            <div class="prose" style="margin-top: 24px;">
+              <p>Fellow-focused dinners, workshops, and mentorship gatherings are listed as dates are confirmed. Review the full event details and request a seat from the Events page.</p>
+            </div>
+            <div class="section-actions">
+              <a class="button button-primary" href="./events.html#event-register">Request a Seat</a>
+              <a class="button button-ghost" href="./events.html#event-list">View All Events</a>
+            </div>
+          </div>
+          <div class="event-preview-list">
             <div class="event-compact-list" data-events-compact="fellows"></div>
           </div>
-          <form class="contact-form" data-contact-form data-form-kind="signup">
-            <input type="hidden" name="source" value="fellows" />
-            <label>Full name<input type="text" name="name" autocomplete="name" placeholder="Your name" /></label>
-            <label>Email<input type="email" name="email" autocomplete="email" placeholder="name@example.com" /></label>
-            <label>Event of interest
-              <select name="event" data-events-options="fellows">
-                <option>A future OncoPath event</option>
-              </select>
-            </label>
-            <label>Fellowship program / institution<input type="text" name="program" placeholder="Program or institution" /></label>
-            <label>Training year
-              <select name="trainingYear">
-                <option>First-year fellow</option>
-                <option>Second-year fellow</option>
-                <option>Third-year fellow</option>
-                <option>Chief fellow</option>
-                <option>Other / not listed</option>
-              </select>
-            </label>
-            <label>Specialty focus<input type="text" name="specialty" placeholder="Medical, surgical, radiation, hematologic oncology, or interest" /></label>
-            <label>Topics you would value<textarea name="topics" rows="3" placeholder="Research, publishing, career paths, mentorship, financial basics..."></textarea></label>
-            <button class="button button-primary" type="submit">Request a Seat</button>
-            <p class="form-status" data-form-status role="status" aria-live="polite"></p>
-          </form>
         </div>
       </section>
     </main>

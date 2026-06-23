@@ -1,8 +1,8 @@
 import React from "react";
 
 /**
- * Agenda / registration timeline step — numbered sage dot, time/label heading, copy.
- * Use in a 4-column grid for the evening agenda or registration flow.
+ * Agenda / request timeline step — numbered sage dot, time/label heading, copy.
+ * Use in a 4-column grid for the evening agenda or request flow.
  */
 export function TimelineStep({ step, title, children, style, ...props }) {
   return (

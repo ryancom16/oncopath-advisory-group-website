@@ -1,7 +1,7 @@
 // Residents — exploratory, developmental pathway page. Distinct rhythm: a
 // vertical "pathway" list instead of the dinner timeline, sage temperature.
 function ResidentsScreen({ go }) {
-  const { Hero, Button, SignalStrip, PrincipleCard, Field, Select, Textarea, Eyebrow } = window.OncoPathDesignSystem_1b0a1a;
+  const { Hero, Button, SignalStrip, PrincipleCard, Eyebrow } = window.OncoPathDesignSystem_1b0a1a;
 
   const pathway = [
     ["Notice the pull", "You meet oncology through consults, clinic rotations, research, or personal curiosity."],
@@ -21,7 +21,7 @@ function ResidentsScreen({ go }) {
         title="Explore the path into oncology."
         copy="Mentorship and educational programming for residents exploring cancer-care careers, including hematology-oncology, radiation oncology, surgical oncology, pathology, and other specialties involved in oncology care."
         actions={<>
-          <Button lane="residents" as="a" href="#interest">Join Interest List</Button>
+          <Button lane="residents" as="button" onClick={() => go("events")}>Request a Spot</Button>
           <Button variant="secondary" as="a" href="#programs">View Program Areas</Button>
         </>}
       />
@@ -79,23 +79,18 @@ function ResidentsScreen({ go }) {
       </Section>
 
       <Section bg="white" id="interest">
-        <div style={{ display: "grid", gap: "clamp(36px,7vw,90px)", gridTemplateColumns: "minmax(0,0.95fr) minmax(0,1fr)", alignItems: "start" }}>
-          <div>
+        <TwoColumn
+          left={<>
             <Eyebrow lane="residents">Resident Interest</Eyebrow>
-            <h2 style={{ font: "var(--display-2)", margin: "0 0 24px" }}>Request a spot at an upcoming event.</h2>
-            <p style={{ color: "var(--text-body)", fontSize: "1.08rem", maxWidth: 480, margin: "0 0 18px" }}>Choose an event and share a few details so the OncoPath team can confirm fit and send final information. See all upcoming events.</p>
-            <EventCompactList lane="residents" />
-          </div>
-          <InquiryForm cta="Request a Spot" message={(n) => `Thank you, ${n}. Your request has been prepared for the OncoPath team.`}>
-            <Field label="Full name" name="name" placeholder="Your name" />
-            <Field label="Email" type="email" name="email" placeholder="name@example.com" />
-            <Select label="Event of interest" name="event" options={eventOptionsForLane("residents")} />
-            <Field label="Residency program / institution" name="program" placeholder="Program or institution" />
-            <Select label="Training year" name="trainingYear" options={["PGY-1","PGY-2","PGY-3","PGY-4+","Other / not listed"]} />
-            <Field label="Current specialty or interest" name="specialty" placeholder="Internal medicine, surgery, radiation oncology…" />
-            <Textarea label="Topics you would value" name="topics" rows={3} placeholder="Fellowship applications, research, clinical exposure, mentorship…" />
-          </InquiryForm>
-        </div>
+            <h2 style={{ font: "var(--display-2)", margin: "0 0 24px" }}>Upcoming resident events.</h2>
+            <p style={{ color: "var(--text-body)", fontSize: "1.08rem", maxWidth: 520, margin: "0 0 28px" }}>Resident-focused roundtables, workshops, and mentorship gatherings are listed as dates are confirmed. Review the full event details and request a spot from the Events page.</p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 14 }}>
+              <Button lane="residents" as="button" onClick={() => go("events")}>Request a Spot</Button>
+              <Button variant="ghost" as="button" onClick={() => go("events")}>View All Events</Button>
+            </div>
+          </>}
+          right={<EventCompactList lane="residents" flush />}
+        />
       </Section>
     </div>
   );

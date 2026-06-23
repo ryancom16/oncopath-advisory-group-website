@@ -1,4 +1,4 @@
-Numbered step for the evening agenda or registration flow. Use four across.
+Numbered step for the evening agenda or request flow. Use four across.
 
 ```jsx
 <TimelineStep step="1" title="6:30-7:00">

@@ -8,7 +8,7 @@ The signature OncoPath hero: private-dining photo behind a navy gradient scrim, 
   copy="Physician-led small-group community for oncology subspecialty fellows."
   image="assets/imagery/oncopath-hero.png"
   actions={<>
-    <Button as="a" href="#interest">Join Interest List</Button>
+    <Button as="a" href="./events.html#event-register">Request a Seat</Button>
     <Button variant="secondary" as="a" href="./events.html">View Upcoming Events</Button>
   </>}
 />

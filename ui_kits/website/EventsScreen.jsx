@@ -1,4 +1,4 @@
-// Events - operational surface for scalable event lists, details, and registration.
+// Events - public hub for scalable event lists, details, and requests.
 const { useState: useEventsState } = React;
 
 const ONCOPATH_EVENTS = [
@@ -81,7 +81,7 @@ function EventsScreen() {
         copy="Browse upcoming OncoPath dinners, mentorship sessions, and cancer-care community gatherings by city, date, audience, topic, and seat status."
         actions={<>
           <Button as="a" href="#event-list">View Event List</Button>
-          <Button variant="secondary" as="a" href="#event-register">Join the Interest List</Button>
+          <Button variant="secondary" as="a" href="#event-register">Request a Spot</Button>
         </>}
       />
 
@@ -94,7 +94,7 @@ function EventsScreen() {
       <Section bg="white" id="event-list">
         <SectionHeading eyebrow="Event List" lane="fellows" title="Upcoming events.">
           <p style={{ font: "var(--prose)", color: "var(--text-body)", margin: "18px 0 0", maxWidth: 620 }}>
-            Each event carries its own date, city, audience, and seat status. Open <strong style={{ fontWeight: 700, color: "var(--navy-600)" }}>Details</strong> for that event's specific evening flow.
+            Review upcoming dates, cities, audiences, and seat status before requesting a spot.
           </p>
         </SectionHeading>
 
@@ -111,8 +111,8 @@ function EventsScreen() {
         <div style={{ display: "grid", gap: "clamp(36px,7vw,90px)", gridTemplateColumns: "minmax(0,0.95fr) minmax(0,1fr)", alignItems: "start" }}>
           <div>
             <SectionHeadingInline eyebrow="Event Interest" lane="fellows" />
-            <h2 style={{ font: "var(--display-2)", margin: "0 0 24px" }}>Register for an event.</h2>
-            <p style={{ color: "var(--text-body)", fontSize: "1.08rem", maxWidth: 480, margin: 0 }}>Choose an event and share a few details. The OncoPath team will confirm fit, send final information, and note any dietary or accessibility needs.</p>
+            <h2 style={{ font: "var(--display-2)", margin: "0 0 24px" }}>Request a spot at an event.</h2>
+            <p style={{ color: "var(--text-body)", fontSize: "1.08rem", maxWidth: 480, margin: 0 }}>Choose an event and share a few details. The OncoPath team will confirm availability, send final information, and note any dietary or accessibility needs.</p>
           </div>
           <InquiryForm cta="Submit Request" message={(name) => `Thank you, ${name}. Your request has been prepared for the OncoPath team.`}>
             <Field label="Full name" name="name" placeholder="Your name" />

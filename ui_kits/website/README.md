@@ -7,8 +7,8 @@ A high-fidelity, click-through recreation of the OncoPath Advisory Group public 
 | Screen | File | Lane / temperature | Distinct motif |
 | --- | --- | --- | --- |
 | Home | `HomeScreen.jsx` | Brass / umbrella | Four lane cards with top accent bars |
-| Fellows Exchange | `FellowsScreen.jsx` | Brass / warm, social | Evergreen community model + compact event strip + request form |
-| Residents | `ResidentsScreen.jsx` | Sage / exploratory | Connected horizontal pathway + compact event strip |
+| Fellows Exchange | `FellowsScreen.jsx` | Brass / warm, social | Evergreen community model + compact event preview |
+| Residents | `ResidentsScreen.jsx` | Sage / exploratory | Connected horizontal pathway + compact event preview |
 | Events | `EventsScreen.jsx` | Brass / operational | Scalable event rows with expandable per-event details |
 | Consulting | `ConsultingScreen.jsx` | Blue / executive | Quiet services ledger rows + scope checklist |
 | Sponsor / Partner | `PartnerScreen.jsx` | Burgundy / operational | Direct-link only, never in main nav |
