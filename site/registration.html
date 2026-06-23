@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Event Registration | OncoPath Advisory Group</title>
+    <meta
+      name="description"
+      content="Request a spot for an upcoming OncoPath Advisory Group dinner, workshop, or roundtable."
+    />
+    <link rel="stylesheet" href="./styles.css?v=20260623-registration" />
+    <script src="./form-destinations.js?v=20260623-tracer"></script>
+  </head>
+  <body>
+    <main class="handoff-page">
+      <section class="handoff-panel">
+        <p class="eyebrow eyebrow--fellows">OncoPath registration</p>
+        <h1>Opening the registration form.</h1>
+        <p>
+          If the form does not open automatically, use the link below to request a spot for an upcoming OncoPath
+          Advisory Group event.
+        </p>
+        <a class="button button-primary" href="#" data-handoff-link="registration">
+          Open Registration Form
+        </a>
+      </section>
+    </main>
+    <script>
+      (function () {
+        var destination = window.OncoPathFormDestinations && window.OncoPathFormDestinations.registration;
+        var link = document.querySelector('[data-handoff-link="registration"]');
+        if (!destination || !link) return;
+        link.href = destination;
+        window.setTimeout(function () {
+          window.location.href = destination;
+        }, 300);
+      })();
+    </script>
+  </body>
+</html>

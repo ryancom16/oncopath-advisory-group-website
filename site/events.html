@@ -31,18 +31,18 @@
           <p class="eyebrow eyebrow--fellows">Upcoming OncoPath events</p>
           <h1>Upcoming oncology dinners and gatherings.</h1>
           <p class="hero-copy">
-            Browse upcoming OncoPath dinners, mentorship sessions, and cancer-care community gatherings by city, date,
-            audience, topic, and seat status.
+            The first OncoPath dinner is a small Chicago founding pilot: approximately 10 invited fellows, one focused
+            educational theme, and a room built for real conversation.
           </p>
           <div class="hero-actions">
             <a class="button button-primary" href="#event-list">View Event List</a>
-            <a class="button button-secondary" href="#event-register">Request a Spot</a>
+            <a class="button button-secondary" href="./registration.html">Request a Spot</a>
           </div>
         </div>
       </section>
 
       <section class="signal-strip" aria-label="Event positioning">
-        <div><strong>Chicago pilot</strong><span>Limited-seat oncology gatherings beginning in Chicago.</span></div>
+        <div><strong>10-person pilot</strong><span>A founding dinner for approximately 10 invited fellows in Chicago.</span></div>
         <div><strong>Small rooms</strong><span>Dinners, workshops, and roundtables built for real conversation.</span></div>
         <div><strong>Training to practice</strong><span>Mentorship, research, career paths, financial basics, and peer connection.</span></div>
       </section>
@@ -57,7 +57,7 @@
           <div class="event-rows" role="list" data-events-full>
             <p class="event-note" style="margin:0">Loading upcoming events...</p>
           </div>
-          <p class="event-note">OncoPath is currently piloting in Chicago. More dates and cities are planned, and new events appear here as they are confirmed.</p>
+          <p class="event-note">OncoPath is currently piloting in Chicago with an intentionally small founding cohort. More dates and cities can follow after the first room works.</p>
         </div>
       </section>
 
@@ -66,35 +66,20 @@
           <div class="intro">
             <p class="eyebrow eyebrow--fellows">Event Interest</p>
             <h2>Request a spot at an event.</h2>
-            <p>Choose an event and share a few details. The OncoPath team will confirm availability, send final information, and note any dietary or accessibility needs.</p>
+            <p>
+              Use the registration form to request a seat for an upcoming OncoPath dinner, workshop, or roundtable.
+              Seating for the Chicago founding pilot is intentionally limited.
+            </p>
+            <p class="fine">Responses are reviewed before event confirmations are sent.</p>
           </div>
-          <form class="contact-form" data-contact-form data-form-kind="signup">
-            <input type="hidden" name="source" value="events" />
-            <label>Full name<input type="text" name="name" autocomplete="name" placeholder="Your name" /></label>
-            <label>Email<input type="email" name="email" autocomplete="email" placeholder="name@example.com" /></label>
-            <label>Program / institution<input type="text" name="program" placeholder="Program or institution" /></label>
-            <label>Event of interest
-              <select name="event" data-events-options>
-                <option>A future OncoPath event</option>
-              </select>
-            </label>
-            <label>Role or training path
-              <select name="trainingPath">
-                <option>Hematology-oncology fellow</option>
-                <option>Medical oncology fellow</option>
-                <option>Radiation oncology resident or fellow</option>
-                <option>Surgical oncology resident or fellow</option>
-                <option>Pathology resident or fellow</option>
-                <option>Resident physician</option>
-                <option>Other / not listed</option>
-              </select>
-            </label>
-            <label>Specialty focus<input type="text" name="specialty" placeholder="Disease area, oncology specialty, or interest" /></label>
-            <label>Topics you would value<textarea name="topics" rows="3" placeholder="Research, publishing, career paths, mentorship, financial basics..."></textarea></label>
-            <label>Dietary or accessibility notes<textarea name="note" rows="2" placeholder="Optional"></textarea></label>
-            <button class="button button-primary" type="submit">Submit Request</button>
-            <p class="form-status" data-form-status role="status" aria-live="polite"></p>
-          </form>
+          <div class="contact-panel">
+            <h3>OncoPath Event Interest</h3>
+            <p>
+              The form collects name, email, program or institution, role or training path, specialty focus, event
+              interest, topic preferences, and dietary or accessibility notes.
+            </p>
+            <a class="button button-primary" href="./registration.html">Open Registration Form</a>
+          </div>
         </div>
       </section>
     </main>

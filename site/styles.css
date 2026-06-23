@@ -334,6 +334,14 @@ h2 { font-family: var(--font-display); font-weight: 520; font-size: clamp(2rem, 
 .contact-layout { display: grid; gap: clamp(36px, 7vw, 90px); grid-template-columns: minmax(0, 0.95fr) minmax(0, 1fr); align-items: start; }
 .contact-layout .intro p { color: var(--text-body); font-size: 1.08rem; max-width: 480px; margin: 24px 0 0; }
 .contact-layout .fine { color: var(--text-muted); font-size: 0.86rem; max-width: 480px; margin: 14px 0 0; }
+.contact-panel {
+  display: grid; gap: 16px; align-content: start;
+  background: var(--cream); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: var(--shadow-raised); padding: clamp(24px, 4vw, 34px);
+}
+.contact-panel h3 { font-family: var(--font-display); font-weight: 520; font-size: clamp(1.6rem, 3vw, 2.35rem); line-height: 1.04; margin: 0; }
+.contact-panel p { color: var(--text-body); margin: 0; }
+.contact-panel .button { justify-self: start; margin-top: 8px; }
 .contact-form { background: var(--cream); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow-raised); display: grid; gap: 18px; padding: clamp(24px, 4vw, 34px); }
 .contact-form label { display: grid; gap: 8px; font-size: 0.86rem; font-weight: 800; color: rgba(19, 43, 53, 0.82); }
 .contact-form input, .contact-form select, .contact-form textarea {
@@ -345,6 +353,21 @@ h2 { font-family: var(--font-display); font-weight: 520; font-size: clamp(2rem, 
   border-color: var(--blue-600); outline: 3px solid rgba(43, 111, 136, 0.15);
 }
 .form-status { color: var(--text-body); font-size: 0.92rem; margin: 0; min-height: 22px; }
+
+.handoff-page {
+  min-height: 100svh; display: grid; place-items: center; padding: clamp(24px, 6vw, 72px);
+  background:
+    linear-gradient(90deg, rgba(6,23,35,0.96) 0%, rgba(6,23,35,0.76) 100%),
+    url("../assets/imagery/oncopath-hero.png") center / cover no-repeat;
+}
+.handoff-panel {
+  width: min(100%, 720px); display: grid; gap: 18px;
+  background: rgba(255, 253, 248, 0.96); border: 1px solid rgba(255, 255, 255, 0.38);
+  border-radius: var(--radius); box-shadow: var(--shadow-raised); padding: clamp(28px, 5vw, 48px);
+}
+.handoff-panel h1 { font-family: var(--font-display); font-weight: 520; font-size: clamp(2.3rem, 6vw, 4.6rem); line-height: 0.98; margin: 0; color: var(--navy-600); }
+.handoff-panel p { color: var(--text-body); font-size: 1.06rem; margin: 0; max-width: 560px; }
+.handoff-panel .button { justify-self: start; margin-top: 8px; }
 .tag { display: inline-flex; align-items: center; gap: 6px; padding: 5px 11px; border-radius: var(--radius-pill); font-size: 0.74rem; font-weight: 700; letter-spacing: 0.02em; }
 .tag--fellows { background: var(--brass-200); color: var(--wine-700); }
 .tag--partner { background: var(--wine-100, #efdfe0); color: var(--wine-700); }

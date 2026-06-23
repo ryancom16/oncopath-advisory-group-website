@@ -19,7 +19,7 @@ OncoPath Advisory Group is an umbrella, physician-led advisory group with **thre
 | **Consulting Services** | Healthcare orgs, med-ed teams, advisory-board planners | Restrained, executive, trust-signalled | Clinical blue |
 | **Sponsor / Partner** (direct-link) | Pharma/biotech sponsors, recruiters, compliance counsel | Operational, compliance-conscious, not marketing | Burgundy |
 
-The first live product is the **OncoPath Fellows Exchange**, a Chicago pilot dinner series (6:30–8:30 PM) for focused clinical discussion, peer connection, mentorship, practical career learning, and carefully scoped sponsor-supported education.
+The first live product is the **OncoPath Fellows Exchange**, beginning as an approximately 10-person Chicago founding pilot dinner (6:30-8:30 PM) for focused clinical discussion, peer connection, mentorship, practical career learning, and carefully scoped sponsor-supported education.
 
 **Critical principle: pages must feel distinct.** Each lane should differ in layout, section sequence, density, imagery, iconography, CTAs, and visual motif — while staying one coherent OncoPath brand. A visitor should immediately sense when they have moved from community → exploration → consulting → partner inquiry. Do not reuse the same hero + two-column + card-grid + timeline + form rhythm on every page.
 
@@ -34,7 +34,7 @@ Long-term, OncoPath is built to span the full **quad** of cancer-care specialtie
 3. Surgical oncology
 4. Oncology-focused pathology / diagnostics
 
-**MVP scope:** The first live product remains a Chicago pilot with limited-seat oncology gatherings. Event records should state the exact intended audience for each gathering. The site may name the broader cancer-care specialty universe, but should not imply every event includes every specialty, and should not promise national rollout before dates and city scope are documented.
+**MVP scope:** The first live product remains a Chicago founding pilot with approximately 10 invited fellows. Event records should state the exact intended audience for each gathering. The site may name the broader cancer-care specialty universe, but should not imply every event includes every specialty, and should not promise national rollout before dates and city scope are documented.
 
 ### Hero imagery treatment
 

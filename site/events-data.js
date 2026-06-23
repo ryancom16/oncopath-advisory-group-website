@@ -7,12 +7,12 @@
       id: "chicago-oncology-fellows-dinner",
       dateTag: "Date pending",
       city: "Chicago, IL",
-      title: "Chicago Oncology Fellows Dinner",
+      title: "Chicago Founding Fellows Dinner",
       blurb:
-        "A limited-seat Chicago dinner for oncology fellows and cancer-care trainees across hematology-oncology, medical oncology, radiation oncology, surgical oncology, and pathology-adjacent training paths.",
+        "A 10-person founding pilot dinner for oncology fellows and cancer-care trainees across hematology-oncology, medical oncology, radiation oncology, surgical oncology, and pathology-adjacent training paths.",
       audience: "Oncology fellows",
       format: "Dinner + discussion",
-      status: "Limited seats",
+      status: "Founding pilot",
       lanes: ["fellows"],
       flowTitle: "Evening flow",
       flow: [
@@ -62,12 +62,14 @@
 
   const STATUS_CLASS = {
     "Limited seats": "event-chip--limited",
+    "Founding pilot": "event-chip--limited",
     "Interest list": "event-chip--interest",
     Open: "event-chip--open",
     Waitlist: "event-chip--waitlist",
   };
 
-  const ctaLabel = (event) => (event.status === "Limited seats" ? "Request a seat" : "Express interest");
+  const ctaLabel = (event) =>
+    event.status === "Limited seats" || event.status === "Founding pilot" ? "Request a seat" : "Express interest";
 
   const esc = (value) =>
     String(value)
@@ -107,7 +109,7 @@
           <p>${esc(event.blurb)}</p>
           <h4>${esc(event.flowTitle)}</h4>
           <ol class="flow-rail">${flow}</ol>
-          <a class="button button-primary" href="#event-register" data-event-select="${esc(event.title)}">${esc(
+          <a class="button button-primary" href="./registration.html" data-event-select="${esc(event.title)}">${esc(
             ctaLabel(event)
           )}</a>
         </div>
