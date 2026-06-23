@@ -71,6 +71,8 @@
   const ctaLabel = (event) =>
     event.status === "Limited seats" || event.status === "Founding pilot" ? "Request a seat" : "Express interest";
 
+  const registrationHref = (event) => `./registration.html?event=${encodeURIComponent(event.id)}`;
+
   const esc = (value) =>
     String(value)
       .replace(/&/g, "&amp;")
@@ -109,7 +111,7 @@
           <p>${esc(event.blurb)}</p>
           <h4>${esc(event.flowTitle)}</h4>
           <ol class="flow-rail">${flow}</ol>
-          <a class="button button-primary" href="./registration.html" data-event-select="${esc(event.title)}">${esc(
+          <a class="button button-primary" href="${esc(registrationHref(event))}">${esc(
             ctaLabel(event)
           )}</a>
         </div>
