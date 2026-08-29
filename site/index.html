@@ -1,77 +1,112 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="noindex, nofollow" />
-    <title>OncoPath Advisory Group | Maintenance</title>
-    <style>
-      :root {
-        color-scheme: dark;
-        --navy: #061722;
-        --panel: #102433;
-        --line: rgba(255, 255, 255, 0.16);
-        --text: #f5f1e8;
-        --muted: #c8d1d7;
-        --accent: #d8b56d;
-      }
-      * { box-sizing: border-box; }
-      body {
-        margin: 0;
-        min-height: 100vh;
-        display: grid;
-        place-items: center;
-        background: radial-gradient(circle at 50% 0%, #173247 0, var(--navy) 48%, #041018 100%);
-        color: var(--text);
-        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        line-height: 1.5;
-      }
-      main {
-        width: min(92vw, 720px);
-        padding: clamp(28px, 6vw, 56px);
-        border: 1px solid var(--line);
-        border-radius: 10px;
-        background: color-mix(in srgb, var(--panel) 86%, transparent);
-        box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
-      }
-      .mark {
-        width: 52px;
-        height: 52px;
-        display: grid;
-        place-items: center;
-        margin-bottom: 28px;
-        border: 1px solid var(--line);
-        border-radius: 50%;
-        color: var(--accent);
-        font-weight: 700;
-        letter-spacing: 0.04em;
-      }
-      h1 {
-        margin: 0 0 16px;
-        font-size: clamp(2rem, 7vw, 4.25rem);
-        line-height: 1;
-        font-weight: 650;
-        letter-spacing: 0;
-      }
-      p {
-        margin: 0;
-        max-width: 58ch;
-        color: var(--muted);
-        font-size: clamp(1rem, 2vw, 1.2rem);
-      }
-      .small {
-        margin-top: 28px;
-        color: var(--accent);
-        font-size: 0.95rem;
-      }
-    </style>
+    <title>OncoPath Advisory Group</title>
+    <meta name="description" content="OncoPath Advisory Group: physician-led oncology community, education, and advisory services for clinicians moving from training to practice and for organizations working along the path to better cancer care." />
+    <link rel="stylesheet" href="./styles.css?v=20260622-events-hero" />
   </head>
   <body>
-    <main aria-labelledby="maintenance-title">
-      <div class="mark" aria-hidden="true">OP</div>
-      <h1 id="maintenance-title">We&rsquo;ll be back soon.</h1>
-      <p>OncoPath Advisory Group is temporarily offline while we make updates.</p>
-      <p class="small">Please check back later.</p>
+    <header class="site-header" data-header>
+      <a class="brand" href="./index.html" aria-label="OncoPath Advisory Group home">
+        <span class="brand-mark" aria-hidden="true">OP</span>
+        <span>OncoPath Advisory Group</span>
+      </a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" data-nav>
+        <a href="./index.html" aria-current="page">Home</a>
+        <a href="./fellows.html">Fellows</a>
+        <a href="./residents.html">Residents</a>
+        <a href="./events.html">Events</a>
+        <a href="./consulting.html">Consulting</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero hero--home">
+        <div class="hero-content">
+          <h1>OncoPath Advisory Group</h1>
+          <p class="hero-copy">
+            Physician-led oncology community, education, and advisory services for clinicians moving from training to
+            practice, and for organizations working along the path to better cancer care.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="./events.html">Upcoming Events</a>
+            <a class="button button-secondary" href="./fellows.html">Fellows Exchange</a>
+            <a class="button button-secondary" href="./consulting.html">Consulting Services</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="signal-strip" aria-label="Positioning">
+        <div><strong>Path to Cure</strong><span>OncoPath is about the path toward better cancer care.</span></div>
+        <div><strong>Path to Independent Practice</strong><span>Support for fellows, residents, and early-career physicians.</span></div>
+        <div><strong>Board-Certified Expertise</strong><span>Consulting led by licensed oncology and hematology specialists.</span></div>
+      </section>
+
+      <section class="section section-white">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow eyebrow--fellows">Practice Areas</p>
+            <h2>Four lanes under one physician-led advisory group.</h2>
+          </div>
+          <div class="lane-grid">
+            <article class="lane-card lane--fellows">
+              <div class="bar"></div>
+              <div class="body">
+                <span class="idx">01</span>
+                <h3>Oncology Subspecialty Fellows</h3>
+                <p>Dinner series, peer community, mentorship, research and publishing guidance, and career navigation for fellows across the oncologic subspecialties — medical, surgical, radiation, and hematologic oncology.</p>
+                <a class="link" href="./fellows.html">Explore Fellows Exchange &rarr;</a>
+              </div>
+            </article>
+            <article class="lane-card lane--residents">
+              <div class="bar"></div>
+              <div class="body">
+                <span class="idx">02</span>
+                <h3>Resident Physicians</h3>
+                <p>Programming for residents considering hematology-oncology and exploring the path into the cancer-care subspecialties.</p>
+                <a class="link" href="./residents.html">Explore Resident Pathways &rarr;</a>
+              </div>
+            </article>
+            <article class="lane-card lane--consulting">
+              <div class="bar"></div>
+              <div class="body">
+                <span class="idx">03</span>
+                <h3>Consulting Services</h3>
+                <p>Medical oncology and hematology consulting provided by board-certified, licensed medical oncologists and hematologists.</p>
+                <a class="link" href="./consulting.html">View Consulting Services &rarr;</a>
+              </div>
+            </article>
+            <article class="lane-card lane--events">
+              <div class="bar"></div>
+              <div class="body">
+                <span class="idx">04</span>
+                <h3>Upcoming Events</h3>
+                <p>Small-group dinners, mentorship sessions, and oncology community gatherings, beginning with a 10-person Chicago founding pilot.</p>
+                <a class="link" href="./events.html">View Upcoming Events &rarr;</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>OncoPath Advisory Group</strong>
+        <span class="brand-line">Path to Cure: oncology and hematology education, community, and advisory services.</span>
+        <a class="footer-link" href="./sponsor.html">Sponsor inquiries</a>
+      </div>
+      <p class="disclaimer">
+        No CME credit is offered unless expressly stated through an accredited provider. Consulting engagements are
+        scoped separately and subject to applicable clinical, legal, and institutional requirements.
+      </p>
+    </footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>
