@@ -8,7 +8,8 @@ A clean, portable, multi-page static website. No build step, no framework — ju
 - `residents.html` — Resident Pathways + compact event preview + link to Events requests
 - `events.html` — data-driven event list with expandable details and event-specific request form
 - `consulting.html` — Consulting services + inquiry form
-- `sponsor.html` — direct-link Sponsor / Partner inquiry (not in the main nav)
+- `sponsor.html` — direct-link Sponsorship overview (not in the main nav)
+- `sponsor-inquiry.html` — sponsor-specific intake handoff (not in the main nav)
 
 ## Files
 - `styles.css` — self-contained styles (tokens + components mirror the design system)
@@ -33,6 +34,7 @@ hero, edit its `background-position` in the `.hero--<page>` rule in `styles.css`
 logos, drug imagery, or patient imagery.
 
 ## Forms
-Forms are front-end only (they show a confirmation message). Wire them to Luma,
-Fillout, Airtable, or Framer for real capture — each `<form>` carries a
-`data-form-kind` attribute you can route on.
+Event and general inquiry forms are routed through `form-destinations.js`. The
+sponsor lane has its own destination so sponsor submissions can be managed
+separately from consulting inquiries. Do not collect patient-identifying
+information through any public form.
