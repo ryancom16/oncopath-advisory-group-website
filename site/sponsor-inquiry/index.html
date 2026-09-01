@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sponsor Inquiry | OncoPath Advisory Group</title>
+    <meta
+      name="description"
+      content="Start a sponsorship conversation with OncoPath Advisory Group."
+    />
+    <link rel="stylesheet" href="../styles.css?v=20260831-sponsor-lane" />
+    <script src="../form-destinations.js?v=20260831-sponsor-lane"></script>
+  </head>
+  <body>
+    <main class="handoff-page">
+      <section class="handoff-panel" aria-labelledby="sponsor-inquiry-title">
+        <span class="tag tag--partner">Sponsorship</span>
+        <p class="eyebrow eyebrow--partner">OncoPath partner support</p>
+        <h1 id="sponsor-inquiry-title">Start with the right conversation.</h1>
+        <p>
+          This brief intake is for organizations exploring sponsorship or other support for physician-led oncology
+          education and community events. Support, disclosures, and review requirements are confirmed before anything
+          is opened for registration.
+        </p>
+        <p>
+          Please do not include patient-identifying information, prescribing information, or confidential clinical
+          details.
+        </p>
+        <a class="button button-partner" href="#" data-handoff-link="sponsorship">
+          Open Sponsor Inquiry
+        </a>
+        <p class="fine" data-handoff-fallback hidden>
+          The sponsor intake form is being finalized. Email
+          <a href="mailto:partnerships@oncopathadvisorygroup.com">partnerships@oncopathadvisorygroup.com</a>
+          to start the conversation.
+        </p>
+      </section>
+    </main>
+    <script>
+      (function () {
+        var destination = window.OncoPathFormDestinations && window.OncoPathFormDestinations.sponsorship;
+        var link = document.querySelector('[data-handoff-link="sponsorship"]');
+        var fallback = document.querySelector('[data-handoff-fallback]');
+        if (!link) return;
+        if (!destination) {
+          link.hidden = true;
+          if (fallback) fallback.hidden = false;
+          return;
+        }
+        link.href = destination;
+        window.setTimeout(function () {
+          window.location.href = destination;
+        }, 300);
+      })();
+    </script>
+  </body>
+</html>

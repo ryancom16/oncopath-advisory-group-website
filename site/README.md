@@ -3,13 +3,13 @@
 A clean, portable, multi-page static website. No build step, no framework — just HTML + one CSS file + a small JS file. Easy to host anywhere and to port to Framer or Webflow.
 
 ## Pages
-- `index.html` — umbrella homepage (Fellows / Residents / Events / Consulting lanes)
-- `fellows.html` — evergreen Fellows Exchange community + compact event preview + link to Events requests
-- `residents.html` — Resident Pathways + compact event preview + link to Events requests
-- `events.html` — data-driven event list with expandable details and event-specific request form
-- `consulting.html` — Consulting services + inquiry form
-- `sponsor.html` — direct-link Sponsorship overview (not in the main nav)
-- `sponsor-inquiry.html` — sponsor-specific intake handoff (not in the main nav)
+- `index.html` — umbrella homepage (served at `/site/`)
+- `fellows/` — evergreen Fellows Exchange community + compact event preview + link to Events requests
+- `residents/` — Resident Pathways + compact event preview + link to Events requests
+- `events/` — data-driven event list with expandable details and event-specific request form
+- `consulting/` — Consulting services + inquiry form
+- `partners/` — Sponsorship overview and partner support page
+- `sponsor-inquiry/` — sponsor-specific intake handoff
 
 ## Files
 - `styles.css` — self-contained styles (tokens + components mirror the design system)
@@ -27,7 +27,7 @@ dining photo until you add the real file. Drop these into `../assets/imagery/`:
 | Residents | `assets/imagery/hero-residents.png` | mentorship / study / exploration |
 | Consulting | `assets/imagery/hero-consulting.png` | executive advisory / clinical review |
 
-Home and Sponsor use the shared `assets/imagery/oncopath-hero.png`. To re-crop any
+Home and Partners use the shared `assets/imagery/oncopath-hero.png`. To re-crop any
 hero, edit its `background-position` in the `.hero--<page>` rule in `styles.css`.
 
 **Imagery rules:** editorial medical-hospitality only — no identifiable people,
@@ -36,5 +36,6 @@ logos, drug imagery, or patient imagery.
 ## Forms
 Event and general inquiry forms are routed through `form-destinations.js`. The
 sponsor lane has its own destination so sponsor submissions can be managed
-separately from consulting inquiries. Do not collect patient-identifying
-information through any public form.
+separately from consulting inquiries. Public navigation uses clean directory
+URLs; the legacy `.html` pages remain as backwards-compatible copies. Do not
+collect patient-identifying information through any public form.
