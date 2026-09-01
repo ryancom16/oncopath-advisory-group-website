@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Consulting Inquiry | OncoPath Advisory Group</title>
+    <meta
+      name="description"
+      content="Start a consulting inquiry with OncoPath Advisory Group."
+    />
+    <link rel="stylesheet" href="../styles.css?v=20260623-registration" />
+    <script src="../form-destinations.js?v=20260831-intake-lanes"></script>
+  </head>
+  <body>
+    <main class="handoff-page">
+      <section class="handoff-panel">
+        <p class="eyebrow eyebrow--consulting">OncoPath consulting</p>
+        <h1>Opening the consulting inquiry form.</h1>
+        <p>
+          If the form does not open automatically, use the link below to share your organization, clinical or
+          educational need, timeline, and desired deliverable.
+        </p>
+        <a class="button button-consulting" href="#" data-handoff-link="inquiry">
+          Open Consulting Inquiry
+        </a>
+      </section>
+    </main>
+    <script>
+      (function () {
+        var destination = window.OncoPathFormDestinations && window.OncoPathFormDestinations.inquiry;
+        var link = document.querySelector('[data-handoff-link="inquiry"]');
+        if (!destination || !link) return;
+        link.href = destination;
+        window.setTimeout(function () {
+          window.location.href = destination;
+        }, 300);
+      })();
+    </script>
+  </body>
+</html>

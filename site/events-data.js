@@ -71,7 +71,8 @@
   const ctaLabel = (event) =>
     event.status === "Limited seats" || event.status === "Founding pilot" ? "Request a seat" : "Express interest";
 
-  const registrationHref = (event) => `./registration.html?event=${encodeURIComponent(event.id)}`;
+  const routeBase = window.location.pathname.endsWith("/") && !window.location.pathname.endsWith("/site/") ? "../" : "./";
+  const registrationHref = (event) => `${routeBase}registration/?event=${encodeURIComponent(event.id)}`;
 
   const esc = (value) =>
     String(value)
@@ -120,7 +121,7 @@
 
   function compactCard(event) {
     return `
-      <a class="event-compact" href="./events.html#event-list">
+      <a class="event-compact" href="${routeBase}events/#event-list">
         <span class="event-compact-when">
           <span class="event-compact-tag">${esc(event.dateTag)}</span>
           <span class="event-compact-city">${esc(event.city)}</span>
